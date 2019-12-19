@@ -28,3 +28,44 @@ The most commonly used Git commands are:
    tag        Create, list, delete or verify a tag object signed with GPG
    
 ----------------------------------------------------------------------------------------
+git log --graph --pretty=format:'%Cred%h%Creset%n' --abbrev-commit --date=relative --branches --all
+#show the graph of the commit
+
+* 0bcaee0
+| 
+* 9c10c1b
+|   
+*   cdbfd29
+|\  
+| | 
+| * 9871100
+| |   
+| | * 828b23c
+| |/  
+|/|   
+| | 
+* | 71c5739
+|/  
+| 
+* 07e804e
+| 
+* 243ab3e
+| 
+* 40efd50
+----------------------------------------------------------------------------------------
+git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+#another way to show the graph
+
+* 0bcaee0 - (HEAD -> master) new commitment (4 hours ago) <>
+* 9c10c1b - (br1) chnage branch after sdd (3 days ago) <>
+*   cdbfd29 - (origin/master) test1856 (4 days ago) <>
+|\  
+| * 9871100 - Create README.md (4 days ago) <>
+| | * 828b23c - (origin/test_branch) branch added (4 days ago) <>
+| |/  
+|/|   
+* | 71c5739 - test commit (4 days ago) <>
+|/  
+* 07e804e - test (4 days ago) <>
+* 243ab3e - Update ssss.txt (4 days ago) <>
+* 40efd50 - Create ssss.txt (4 days ago) <>
