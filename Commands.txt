@@ -80,3 +80,8 @@ git hash-object ***
 git ls-tree HEAD
 #get the list of files with hashes
 ----------------------------------------------------------------------------------------
+git cat-file blob af5626b
+Hello, world!
+#show the file content
+----------------------------------------------------------------------------------------
+
