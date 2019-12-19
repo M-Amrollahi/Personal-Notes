@@ -85,3 +85,25 @@ Hello, world!
 #show the file content
 ----------------------------------------------------------------------------------------
 
+https://shafiul.github.io/gitbook/1_the_git_object_model.html
+
+The Git Objects
+Every object consists of three things - a type, a size and content. The size is simply the size of the contents, the contents depend on what type of object it is, and there are four different types of objects: "blob", "tree", "commit", and "tag".
+
+-A "blob" is used to store file data - it is generally a file.
+-A "tree" is basically like a directory - it references a bunch of other trees and/or blobs (i.e. files and sub-directories)
+-A "commit" points to a single tree, marking it as what the project looked like at a certain point in time. It contains meta-information about that point in time, such as a timestamp, the author of the changes since the last commit, a pointer to the previous commit(s), etc.
+-A "tag" is a way to mark a specific commit as special in some way. It is normally used to tag certain commits as specific releases or something along those lines.
+
+$git show 6ff87c4664
+#show content of the blob
+
+$git show -s --pretty=raw 2be7fcb476
+commit 2be7fcb4764f2dbcee52635b91fedb1b3dcf7ab4
+tree fb3a8bdd0ceddd019615af4d57a53f43d8cee2bf
+parent 257a84d9d02e90447b149af58b271c19405edb6a
+author Dave Watson <dwatson@mimvista.com> 1187576872 -0400
+committer Junio C Hamano <gitster@pobox.com> 1187591163 -0700
+----------------------------------------------------------------------------------------
+
+
