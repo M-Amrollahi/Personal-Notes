@@ -69,3 +69,11 @@ git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cres
 * 07e804e - test (4 days ago) <>
 * 243ab3e - Update ssss.txt (4 days ago) <>
 * 40efd50 - Create ssss.txt (4 days ago) <>
+----------------------------------------------------------------------------------------
+shasum ****
+openssl SHA1 ****
+
+git hash-object ***
+
+#get the hash of the file 
+----------------------------------------------------------------------------------------
