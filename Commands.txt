@@ -1,0 +1,3 @@
+du -sh /path
+# Disk usage command - how much disk space is used for path
+#220K	/path
