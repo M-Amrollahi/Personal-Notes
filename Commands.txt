@@ -72,6 +72,7 @@ git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cres
 ----------------------------------------------------------------------------------------
 shasum ****
 openssl SHA1 ****
+openssl dgst -sha256 test.txt
 
 git hash-object ***
 
@@ -106,4 +107,9 @@ author Dave Watson <dwatson@mimvista.com> 1187576872 -0400
 committer Junio C Hamano <gitster@pobox.com> 1187591163 -0700
 ----------------------------------------------------------------------------------------
 
-
+OpenSSL
+openssl rsa -out privkey_file.pem -algorithm rsa 2048 (or 4096) #create a private key file
+openssl rsa -in privkey_file.pem -outform PEM -pubout -out pubkey_file.pem #create a public key out of private key
+openssl dgst -sha256 -sign privkey_file.pem -out signSha_file test.txt # sign the hash of the test.txt file and store in signSha_file
+openssl enc -base64 -in signSha_file -out signSha256Base64 # to readable file
+openssl dgst -sha256 -verify pubkey_file.pem -signature signSha_file test.txt # verify the sign
