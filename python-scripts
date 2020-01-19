@@ -189,3 +189,53 @@ my_function(fname = "Tobias", lname = "Refsnes")
 #Use lambda functions when an anonymous function is required for a short period of time.
 x = lambda a : a + 10
 print(x(5))
+--------------------------------------
+#Class
+class Person:
+  def __init__(mysillyobject, name, age):
+    mysillyobject.name = name
+    mysillyobject.age = age
+
+  def myfunc(abc):
+    print("Hello my name is " + abc.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+
+#Python Inheritance
+#Note: The child's __init__() function overrides the inheritance of the parent's __init__() function.
+
+#To keep the inheritance of the parent's __init__() function, add a call to the parent's __init__() function:
+class Student(Person):
+  def __init__(self, fname, lname):
+    Person.__init__(self, fname, lname)
+    
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+-------------------------------------- 
+Technically, in Python, an iterator is an object which implements the iterator protocol, 
+which consist of the methods __iter__() and __next__().
+Lists, tuples, dictionaries, and sets are all iterable objects. 
+They are iterable containers which you can get an iterator from.
+All these objects have a iter() method which is used to get an iterator:
+
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+--------------------------------------
+#Modules
+import mymodule
+mymodule.greeting("Jonathan")
+
+import mymodule as mx
+a = mx.person1["age"]
+print(a)
+
+#List all the defined names belonging to the platform module:
+import platform
+x = dir(platform)
+print(x)
