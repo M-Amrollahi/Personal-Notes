@@ -159,3 +159,33 @@ thistuple = tuple(("apple", "banana", "cherry"))
 thislist = list(("apple", "banana", "cherry"))
 thisset = set(("apple", "banana", "cherry"))
 thisdict = dict(brand="Ford", model="Mustang", year=1964)
+--------------------------------------
+#nothing to do
+if b > a:
+  pass
+  
+continue
+break
+while
+for
+
+#when the for completes then do else!!
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+  
+--------------------------------------
+Python Function:
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+
+my_function(fname = "Tobias", lname = "Refsnes")
+
+#Use lambda functions when an anonymous function is required for a short period of time.
+x = lambda a : a + 10
+print(x(5))
