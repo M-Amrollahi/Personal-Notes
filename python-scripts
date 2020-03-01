@@ -153,6 +153,19 @@ remove()	Removes the item with the specified value
 reverse()	Reverses the order of the list
 sort()	Sorts the list
 
+Dictionary:
+clear()	  Removes all the elements from the dictionary
+copy()  	Returns a copy of the dictionary
+fromkeys()	Returns a dictionary with the specified keys and value
+get() 	  Returns the value of the specified key
+items() 	Returns a list containing a tuple for each key value pair
+keys()  	Returns a list containing the dictionary's keys
+pop()	       Removes the element with the specified key
+popitem()	  Removes the last inserted key-value pair
+setdefault()	  Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()  	Updates the dictionary with the specified key-value pairs
+values()	  Returns a list of all the values in the dictionary
+
 thistuple = ("apple", "banana", "cherry")
 thislist = ["apple", "banana", "cherry"]
 thisset = {"apple", "banana", "cherry"}
@@ -163,6 +176,10 @@ thislist = list(("apple", "banana", "cherry"))
 thisset = set(("apple", "banana", "cherry"))
 thisdict = dict(brand="Ford", model="Mustang", year=1964)
 
+#Dictionary key not exist
+if str_t not in dict_moviTypes:
+  dict_moviTypes[str_t] = 0
+               
 One of the most powerful components of sorted() is the keyword argument called key. 
 This argument expects a function to be passed to it, 
 and that function will be used on each value in the list being sorted to determine the resulting order.
