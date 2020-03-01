@@ -36,10 +36,7 @@ a.decode()
 import random
 print(random.randrange(1,10))
 --------------------------------------
-Strings
-txt = "The rain in Spain stays mainly in the plain"
-x = "ain" in txt
-
+Print
 age,a1,a2 = 36,10,11
 txt = "My name is John, and I am {} {} {}".format(age,a1,a2)
 
@@ -49,6 +46,11 @@ price = 49.95
 #to make sure they place in right index
 myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
 print(myorder.format(quantity, itemno, price))
+
+--------------------------------------
+Strings
+txt = "The rain in Spain stays mainly in the plain"
+x = "ain" in txt
 
 #print hex value
 print("xcv\x48")
@@ -138,6 +140,7 @@ Tuple is a collection which is ordered and unchangeable. Allows duplicate member
 Set is a collection which is unordered and unindexed. No duplicate members.
 Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
 
+List:
 append()	Adds an element at the end of the list
 clear()	Removes all the elements from the list
 copy()	Returns a copy of the list
@@ -159,6 +162,36 @@ thistuple = tuple(("apple", "banana", "cherry"))
 thislist = list(("apple", "banana", "cherry"))
 thisset = set(("apple", "banana", "cherry"))
 thisdict = dict(brand="Ford", model="Mustang", year=1964)
+
+One of the most powerful components of sorted() is the keyword argument called key. 
+This argument expects a function to be passed to it, 
+and that function will be used on each value in the list being sorted to determine the resulting order.
+>>> words = ['banana', 'pie', 'Washington', 'book']
+>>> sorted(words, key=len)
+['pie', 'book', 'banana', 'Washington']
+
+lambda functions are also useful when you need to sort class objects based on a property.
+If you have a group of students and need to sort them by their final grade, highest to lowest,
+then a lambda can be used to get the grade property from the class:
+>>> from collections import namedtuple
+
+>>> StudentFinal = namedtuple('StudentFinal', 'name grade')
+>>> bill = StudentFinal('Bill', 90)
+>>> patty = StudentFinal('Patty', 94)
+>>> bart = StudentFinal('Bart', 89)
+>>> students = [bill, patty, bart]
+>>> sorted(students, key=lambda x: getattr(x, 'grade'), reverse=True)
+[StudentFinal(name='Patty', grade=94), StudentFinal(name='Bill', grade=90), StudentFinal(name='Bart', grade=89)]
+
+Sort in order
+>>>sorted(list1,key=lambda x: (x[1],x[2],x[0])
+#[(5, 3, 2), (2, 3, 4), (3, 4, 5)]
+
+If you don't want to use lambda you can use itemgetter.
+
+from operator import itemgetter
+sorted(list1,key=itemgetter(1,2,0))
+#[(5, 3, 2), (2, 3, 4), (3, 4, 5)]
 --------------------------------------
 #nothing to do
 if b > a:
@@ -189,6 +222,11 @@ my_function(fname = "Tobias", lname = "Refsnes")
 #Use lambda functions when an anonymous function is required for a short period of time.
 x = lambda a : a + 10
 print(x(5))
+
+def myfunc(n):
+  return lambda a : a * n
+mydoubler = myfunc(2)
+print(mydoubler(11)) #22
 --------------------------------------
 #Class
 class Person:
