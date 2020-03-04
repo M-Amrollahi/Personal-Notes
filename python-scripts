@@ -210,6 +210,31 @@ from operator import itemgetter
 sorted(list1,key=itemgetter(1,2,0))
 #[(5, 3, 2), (2, 3, 4), (3, 4, 5)]
 --------------------------------------
+Map 
+map() function returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable (list, tuple etc.)
+
+Syntax :
+map(fun, iter)
+
+# Double all numbers using map and lambda 
+numbers = (1, 2, 3, 4) 
+result = map(lambda x: x + x, numbers) 
+print(list(result)) 
+
+Filter
+The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not.
+
+# a list contains both even and odd numbers.  
+seq = [0, 1, 2, 3, 5, 8, 13] 
+  
+# result contains odd numbers of the list 
+result = filter(lambda x: x % 2, seq) 
+print(list(result)) 
+  
+# result contains even numbers of the list 
+result = filter(lambda x: x % 2 == 0, seq) 
+print(list(result)) 
+--------------------------------------
 #nothing to do
 if b > a:
   pass
