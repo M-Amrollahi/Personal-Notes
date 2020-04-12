@@ -113,3 +113,10 @@ openssl rsa -in privkey_file.pem -outform PEM -pubout -out pubkey_file.pem #crea
 openssl dgst -sha256 -sign privkey_file.pem -out signSha_file test.txt # sign the hash of the test.txt file and store in signSha_file
 openssl enc -base64 -in signSha_file -out signSha256Base64 # to readable file
 openssl dgst -sha256 -verify pubkey_file.pem -signature signSha_file test.txt # verify the sign
+
+----------------------------------------------------------------------------------------
+#Find macos dependencies packages
+brew deps --tree --installed
+brew deps --tree phpmyadmin
+#Remove package deps
+brew deps [FORMULA] | xargs brew remove --ignore-dependencies
