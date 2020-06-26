@@ -1,0 +1,23 @@
+Command Mode : 
+i,a -> insert
+x -> delete X ->
+r -> replace
+o -> new line bottom O -> above
+d -> delete
+J -> join 2 line
+G -> Go 1G -> go to first line (10G , 1G , G)
+y -> copy (y , 2y, 3y... -> copy lines)
+p -> paste
+/ -> search (n -> next , N -> previous)
+^ -> start of line
+$ -> end of line
+. -> repeat latest command
+
+3x -> 3 delete
+u -> undo
+dw -> delete word
+d$ -> delete to end of line
+d^ -> delete to start of line
+
+% -> to go to end of the ])}
+
