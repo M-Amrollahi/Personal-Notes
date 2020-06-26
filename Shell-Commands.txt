@@ -22,3 +22,8 @@ brew deps --tree --installed
 brew deps --tree phpmyadmin
 #Remove package deps
 brew deps [FORMULA] | xargs brew remove --ignore-dependencies
+----------------------------------------------------------------------------------------
+#remove folder with some files
+rm -rf some_dir
+
+
