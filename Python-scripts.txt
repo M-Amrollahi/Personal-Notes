@@ -379,3 +379,4 @@ finally:
   
   #create new virtual environment
   python3 -m venv MyEnv
+  source env/bin/activate
