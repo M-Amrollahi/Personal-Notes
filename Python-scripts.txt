@@ -376,3 +376,6 @@ finally:
   f.close()
   
   raise TypeError("Only integers are allowed")
+  
+  #create new virtual environment
+  python3 -m venv MyEnv
