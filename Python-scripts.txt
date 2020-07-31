@@ -380,3 +380,36 @@ finally:
   #create new virtual environment
   python3 -m venv MyEnv
   source env/bin/activate
+  
+----------------------------------------------
+Python special variables:
+  
+__name__ defines the namespace that a Python module is running in. When Python is run, it will replace __name__ with it's namespace.
+__doc__ will print out the docstring that appears in a class or method. A docstring is a string comment and is the first line after the class or method header
+__getattr__ is a method that you can write into your classes that specifies how Python reacts when it can't find a called variable or method. __getattr__ takes the name of what it's looking for as a parameter. It can be used in the singleton pattern to redirect the called variable to the inner class or it can be used to raise exceptions
+
+class ATest:
+    class_wide_var=0
+    def __init__(self):
+        self.x=5
+        self.y=7
+        self.z=10
+        ATest.class_wide_var+=1
+     
+    def add(self,num1,num2):
+        return num1+num2
+    def __getattr__(self,name):
+        print "Not Found"
+	raise BadValueException
+
+a=ATest()
+x=a.novar
+
+_setattr__ and setattr work in the same way as their corresponding "get" methods above:
+
+__class__ returns the class an instance is
+__bases__ is a variable that contains as a tuple all the classes that a class inherites from
+__subclasses__ Similar to above, __subclasses__ is a method that will return all the subclasses of a class in a list:
+dir() is a method that will return, as a list, every associated method or attribute. It can be run on an instance, a class, a list, and others
+locals is a native method that displays all the local variables as dictionary entries. globals does the same with global variables
+Similar to locals(), __dict__ will return, as a dictionary, all attributes of a class instance
