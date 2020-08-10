@@ -2,6 +2,8 @@ Docker is a set of platform-as-a-service (PaaS) products that use OS-level virtu
 Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels.
 All containers are run by a single operating-system kernel and are thus more lightweight than virtual machines. — Wikipedia
 
+docker build --tag my-python-app .
+To build the image, run Docker build from a command line or terminal
 
 docker run -it --rm demo_docker
 This command runs the Docker container and creates an interactive Bash shell in the container (-it). It also automatically removes the container when it exits (--rm).
