@@ -8,6 +8,9 @@ To build the image, run Docker build from a command line or terminal
 docker run -it --rm demo_docker
 This command runs the Docker container and creates an interactive Bash shell in the container (-it). It also automatically removes the container when it exits (--rm).
 
+docker exec -t -i mycontainer /bin/sh
+To see what is inside the container
+
 -------------------------
 FROM
 RUN
