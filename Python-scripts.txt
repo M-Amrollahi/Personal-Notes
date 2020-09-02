@@ -413,3 +413,21 @@ __subclasses__ Similar to above, __subclasses__ is a method that will return all
 dir() is a method that will return, as a list, every associated method or attribute. It can be run on an instance, a class, a list, and others
 locals is a native method that displays all the local variables as dictionary entries. globals does the same with global variables
 Similar to locals(), __dict__ will return, as a dictionary, all attributes of a class instance
+----------------------------------------------
+
+Pytest
+
+def sum(num1, num2):
+    """It returns sum of two numbers"""
+    return num1 + num2
+    
+import pytest
+#make sure to start function name with test
+def test_sum():
+    assert sum(1, 2) == 3
+    
+@pytest.mark.parametrize('num1, num2, expected', [(3,5,8)])
+def test_sum(num1, num2, expected):
+        assert sum(num1, num2) == expected
+    
+Terminal : pytest test_example.py
