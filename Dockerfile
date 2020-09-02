@@ -1,12 +1,17 @@
 Docker machine is different from Docker engine and you can't use the two terms interchangeably. Here's how these two are different from each other.
 https://docs.docker.com/machine/overview/
 
-By "Docker" we mean Docker Engine which is a client-server application made up of the Docker daemon, a REST API that specifies interfaces for interacting with the daemon, and a command line interface (CLI) client that talks to the daemon (through the REST API wrapper).
+By "Docker" we mean Docker Engine which is a client-server application made up of the Docker daemon, a REST API that specifies interfaces for 
+interacting with the daemon, and a command line interface (CLI) client that talks to the daemon (through the REST API wrapper).
 Docker Engine accepts docker commands from the CLI, such as docker run <image>, docker ps to list running containers,docker image ls to list images, and so on.
 
-Docker Machine is a tool for provisioning and managing your Dockerized hosts (hosts with Docker Engine on them). Typically, you install Docker Machine on your local system. Docker Machine has its own command line client docker-machine and the Docker Engine client, docker.
-You can use Machine to install Docker Engine on one or more virtual systems. These virtual systems can be local (as when you use Machine to install and run Docker Engine in VirtualBox on Mac or Windows) or remote (as when you use Machine to provision Dockerized hosts on cloud providers).
+Docker Machine is a tool for provisioning and managing your Dockerized hosts (hosts with Docker Engine on them). Typically, you install Docker Machine on 
+your local system. Docker Machine has its own command line client docker-machine and the Docker Engine client, docker.
+You can use Machine to install Docker Engine on one or more virtual systems. These virtual systems can be local 
+(as when you use Machine to install and run Docker Engine in VirtualBox on Mac or Windows) or remote 
+(as when you use Machine to provision Dockerized hosts on cloud providers).
 The Dockerized hosts themselves can be thought of, and are sometimes referred to as, managed “machines”.
+
 Docker is a set of platform-as-a-service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.
 Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels.
 All containers are run by a single operating-system kernel and are thus more lightweight than virtual machines. — Wikipedia
