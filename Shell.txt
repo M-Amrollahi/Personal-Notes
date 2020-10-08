@@ -26,4 +26,37 @@ brew deps [FORMULA] | xargs brew remove --ignore-dependencies
 #remove folder with some files
 rm -rf some_dir
 
+----------------------------------------------------------------------------------------
+#get the content with http header
+curl -i https://jsonplaceholder.typicode.com/posts/4
 
+#get only http header
+curl --head/-I https://jsonplaceholder.typicode.com/posts/4
+
+#save to file
+curl -o newfile.txt https://jsonplaceholder.typicode.com/posts/4
+curl -O https://jsonplaceholder.typicode.com/posts/4
+
+#limit download rate
+curl -O --limit-rate 1000B https://jsonplaceholder.typicode.com/posts/4
+
+#post data
+curl --data "title=Hello&body=hello world" https://jsonplaceholder.typicode.com/posts
+
+
+#update data with id 3
+curl -X PUT -d "title=Hello&body=hello world" https://jsonplaceholder.typicode.com/posts/3
+
+#delete data with id 3
+curl -X DELETE https://jsonplaceholder.typicode.com/posts/3
+
+#moved permanantly
+curl -L http://google.com
+
+#send raw http header
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" http://hostname/resource
+
+#verbose with all headers and response
+curl -vs http://www.google.com
+
+----------------------------------------------------------------------------------------
