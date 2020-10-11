@@ -434,6 +434,7 @@ Terminal : pytest test_example.py
 
 --------------------------------------------------------------------------------------------
 #python requests library
+#Best practice website : https://httpbin.org/
 
 response = requests.get("https://api.github.com")
 
