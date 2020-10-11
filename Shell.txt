@@ -60,3 +60,7 @@ curl -i -H "Accept: application/json" -H "Content-Type: application/json" http:/
 curl -vs http://www.google.com
 
 ----------------------------------------------------------------------------------------
+# show python packages dependency
+pip3 show <package name>
+
+----------------------------------------------------------------------------------------
