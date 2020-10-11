@@ -431,3 +431,70 @@ def test_sum(num1, num2, expected):
         assert sum(num1, num2) == expected
     
 Terminal : pytest test_example.py
+
+--------------------------------------------------------------------------------------------
+#python requests library
+
+response = requests.get("https://api.github.com")
+
+response.status_code
+
+from sys import getsizeof
+getsizeof(response) # report in bytes
+
+response.content # get the raw data in bytes
+response.text # guess the encoding based on the response’s headers
+response.json()
+
+response.headers
+response.headers["Content-Type"] #case insative
+
+response = requests.get(
+    'https://api.github.com/search/repositories',
+    params={'q': 'requests+language:python'},
+) # Query strings are useful for parameterizing GET requests
+
+#edit the request header
+response = requests.get(
+    'https://api.github.com/search/repositories',
+    params={'q': 'requests+language:python'},
+    headers={'Accept': 'application/vnd.github.v3.text-match+json'},
+)
+
+
+#other methods
+requests.post('https://httpbin.org/post', data={'key':'value'})
+requests.put('https://httpbin.org/put', data={'key':'value'})
+requests.delete('https://httpbin.org/delete')
+requests.head('https://httpbin.org/get')
+requests.patch('https://httpbin.org/patch', data={'key':'value'})
+requests.options('https://httpbin.org/get')
+
+#Basic access authentication(HTTP)
+For example, if the browser uses Aladdin as the username and OpenSesame as the password, then the field's value is the Base64 encoding of Aladdin:OpenSesame, or QWxhZGRpbjpPcGVuU2VzYW1l. Then the Authorization header will appear as:
+
+Authorization: Basic QWxhZGRpbjpPcGVuU2VzYW1l
+
+from requests.auth import HTTPBasicAuth
+from getpass import getpass
+requests.get(
+    'https://api.github.com/user',
+    auth=HTTPBasicAuth('username', getpass())
+)
+
+import requests
+from getpass import getpass
+
+# By using a context manager, you can ensure the resources used by
+# the session will be released after use
+with requests.Session() as session:
+    session.auth = ('username', getpass())
+
+    # Instead of requests.get(), you'll use session.get()
+    response = session.get('https://api.github.com/user')
+
+# You can inspect the response just like you did before
+print(response.headers)
+print(response.json())
+
+
