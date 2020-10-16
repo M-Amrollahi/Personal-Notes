@@ -36,6 +36,15 @@ docker attach <id>
 #Run command inside guest os
 RUN apt-get update -y
 RUN ["apt-get","update","-y"]
+
+#remove all unused containers 
+docker system prune
+
+# remove dangling image. A dangling image is an image that is not tagged and is not used by any container
+docker image prune
+
+#rm flag when run the container
+--rm 
 -------------------------
 FROM
 RUN
