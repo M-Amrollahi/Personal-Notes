@@ -69,6 +69,11 @@ CMD
 The CMD instruction sets a default command, which will be executed when you run the Docker image without specifying a command.
 It’s also possible to provide a different command to the Docker image, which will be executed instead of the one specified in the instructions in the Dockerfile.
 CMD echo "Hello world"; echo "Hello ?"; ls
+
+##difference CMD and RUN
+RUN :  execute the default command, when we are building the image. It also will commit the image changes for next step.
+There can be more than 1 RUN command, to aid in process of building a new image.
+CMD : This will not be executed at build time.
 -----------------------------
 
 COPY
