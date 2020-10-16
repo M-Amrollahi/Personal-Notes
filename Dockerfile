@@ -32,6 +32,10 @@ docker network inspect bridge
 
 #go to the container shell
 docker attach <id>
+
+#Run command inside guest os
+RUN apt-get update -y
+RUN ["apt-get","update","-y"]
 -------------------------
 FROM
 RUN
