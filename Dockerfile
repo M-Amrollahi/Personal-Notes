@@ -27,6 +27,11 @@ This command runs the Docker container and creates an interactive Bash shell in 
 docker exec -t -i mycontainer /bin/sh
 To see what is inside the container
 
+#inspect network docker containers
+docker network inspect bridge
+
+#go to the container shell
+docker attach <id>
 -------------------------
 FROM
 RUN
