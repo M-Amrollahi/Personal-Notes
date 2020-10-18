@@ -45,6 +45,9 @@ docker image prune
 
 #rm flag when run the container
 --rm 
+
+#create a new image out of a running container with new image name
+docker commit 48cff2e9be75 ubuntu-foo
 -------------------------
 FROM
 RUN
