@@ -100,3 +100,42 @@ parent 257a84d9d02e90447b149af58b271c19405edb6a
 author Dave Watson <dwatson@mimvista.com> 1187576872 -0400
 committer Junio C Hamano <gitster@pobox.com> 1187591163 -0700
 ----------------------------------------------------------------------------------------
+
+--local (folder)
+--global (user)
+--system (system)
+git config --list
+
+git config --global user.name "AAA"
+
+
+Working Tree / Working Directory
+Staging / Index
+Repository
+
+Track , Untracked files
+
+#move from staged to unstaged
+git rm --cached <filename>
+
+(root-commit) ab0a279
+
+git add index.txt --patch
+
+git log --oneline
+
+git show <commit>
+
+git add --interactive <file>
+
+#restore to last position
+git restore <filename>
+
+#restore all files to last commit
+git restore .
+
+#restore the file to commit id
+git restore --source 27hq6251 index.txt
+
+#go back 2 step commit (do not remove the rest commits)
+git reset HEAD~2
