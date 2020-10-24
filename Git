@@ -116,6 +116,7 @@ Repository
 Track , Untracked files
 
 #move from staged to unstaged
+git restore --staged <filename>
 git rm --cached <filename>
 
 (root-commit) ab0a279
