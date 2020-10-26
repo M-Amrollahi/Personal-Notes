@@ -190,8 +190,14 @@ and that function will be used on each value in the list being sorted to determi
 lambda functions are also useful when you need to sort class objects based on a property.
 If you have a group of students and need to sort them by their final grade, highest to lowest,
 then a lambda can be used to get the grade property from the class:
->>> from collections import namedtuple
 
+(lambda x: x + 1)(2)
+
+>>> full_name = lambda first, last: f'Full name: {first.title()} {last.title()}'
+>>> full_name('guido', 'van rossum')
+
+
+>>> from collections import namedtuple
 >>> StudentFinal = namedtuple('StudentFinal', 'name grade')
 >>> bill = StudentFinal('Bill', 90)
 >>> patty = StudentFinal('Patty', 94)
@@ -499,4 +505,8 @@ with requests.Session() as session:
 print(response.headers)
 print(response.json())
 
+--------------------------------------------------------------------------------------------
+##### _
+in the interactive interpreter, the single underscore (_) is bound to the last expression evaluated.
+--------------------------------------------------------------------------------------------
 
