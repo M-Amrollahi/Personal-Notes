@@ -20,6 +20,10 @@ x = memoryview(bytes(5))
 --------------------------------------
 z = -87.7e100
 --------------------------------------
+#convert char to asci code
+>>> ord("a")
+97
+
 #convert to string
 s = str(x)
 
