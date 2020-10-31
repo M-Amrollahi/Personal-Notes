@@ -241,6 +241,10 @@ If you don't want to use lambda you can use itemgetter.
 from operator import itemgetter
 sorted(list1,key=itemgetter(1,2,0))
 #[(5, 3, 2), (2, 3, 4), (3, 4, 5)]
+
+#sort heap
+from heapq import nsmallest
+nsmallest(4,numbers)
 ----------------------------------------------------------------------------
 Map 
 map() function returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable (list, tuple etc.)
