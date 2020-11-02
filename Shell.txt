@@ -23,6 +23,14 @@ brew deps --tree --installed
 brew deps --tree phpmyadmin
 #Remove package deps
 brew deps [FORMULA] | xargs brew remove --ignore-dependencies
+
+
+#Whick package use this package
+brew uses --installed [Formula]
+
+
+#Which packages are not used by any other package
+brew leaves
 ----------------------------------------------------------------------------------------
 #remove folder with some files
 rm -rf some_dir
