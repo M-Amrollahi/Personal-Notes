@@ -18,6 +18,7 @@ openssl dgst -sha256 -verify pubkey_file.pem -signature signSha_file test.txt # 
 
 ----------------------------------------------------------------------------------------
 #Find macos dependencies packages
+brew deps [FORMULA]
 brew deps --tree --installed
 brew deps --tree phpmyadmin
 #Remove package deps
