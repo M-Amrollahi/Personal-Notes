@@ -1,0 +1,68 @@
+Command-H: Hide the windows of the front app. To view the front app but hide all other apps, press Option-Command-H.
+Command-M: Minimize the front window to the Dock. To minimize all windows of the front app, press Option-Command-M.
+Command-T: Open a new tab.
+Command-W: Close the front window. To close all windows of the app, press Option-Command-W.
+Option-Command-Esc: Force quit an app.
+Control–Command–Space bar: Show the Character Viewer, from which you can choose emoji and other symbols.
+
+
+Control-Command-Q: Immediately lock your screen.
+Option–Command–Power button : put mac to sleep
+Control–Shift–Power button : put your display to sleep
+Control–Power button : Display a dialog asking whether you want to restart, sleep, or shut down.
+Control–Option–Command–Power button : Quit all apps, then shut down your Mac. If any open documents have unsaved changes, you will be asked whether you want to save them.
+
+
+Command-I: Show the Get Info window for a selected file.
+Shift-Command-C: Open the Computer window.
+Shift-Command-D: Open the desktop folder.
+Shift-Command-F: Open the Recents window, showing all of the files you viewed or changed recently.
+Shift-Command-G: Open a Go to Folder window.
+Shift-Command-H: Open the Home folder of the current macOS user account.
+Shift-Command-N: Create a new folder.
+Option-Command-P: Hide or show the path bar in Finder windows.
+Option-Command-V: Move the files in the Clipboard from their original location to the current location.
+Command–Left Bracket ([): Go to the previous folder.
+Command–Right Bracket (]): Go to the next folder.
+Command–Up Arrow: Open the folder that contains the current folder.
+Command–Down Arrow: Open the selected item.
+Command-Delete: Move the selected item to the Trash.
+Command–Mission Control: Show the desktop. 
+Control–Down Arrow: Show all windows of the front app.
+Command key while double-clicking: Open a folder in a separate tab or window.
+Command key while dragging to another volume: Move the dragged item to the other volume, instead of copying it. 
+Command-click a window title: See the folders that contain the current folder.
+
+
+Fn–Up Arrow: Page Up: Scroll up one page. 
+Fn–Down Arrow: Page Down: Scroll down one page.
+Fn–Left Arrow: Home: Scroll to the beginning of a document.
+Fn–Right Arrow: End: Scroll to the end of a document.
+Command–Up Arrow: Move the insertion point to the beginning of the document.
+Command–Down Arrow: Move the insertion point to the end of the document.
+Command–Left Arrow: Move the insertion point to the beginning of the current line.
+Command–Right Arrow: Move the insertion point to the end of the current line.
+Option–Left Arrow: Move the insertion point to the beginning of the previous word.
+Option–Right Arrow: Move the insertion point to the end of the next word.
+Shift–Command–Up Arrow: Select the text between the insertion point and the beginning of the document.
+Shift–Command–Down Arrow: Select the text between the insertion point and the end of the document.
+Shift–Command–Left Arrow: Select the text between the insertion point and the beginning of the current line.
+Shift–Command–Right Arrow: Select the text between the insertion point and the end of the current line.
+Control-A: Move to the beginning of the line or paragraph.
+Control-E: Move to the end of a line or paragraph.
+Control-F: Move one character forward.
+Control-B: Move one character backward.
+Control-P: Move up one line.
+Control-N: Move down one line.
+Control-O: Insert a new line after the insertion point.
+Control-T: Swap the character behind the insertion point with the character in front of the insertion point.
+Command–Left Curly Bracket ({): Left align.
+Command–Right Curly Bracket (}): Right align.
+Shift–Command–Vertical bar (|): Center align.
+Option-Command-F: Go to the search field. 
+Option-Command-T: Show or hide a toolbar in the app.
+Option-Command-C: Copy Style: Copy the formatting settings of the selected item to the Clipboard.
+Option-Command-V: Paste Style: Apply the copied style to the selected item.
+Option-Shift-Command-V: Paste and Match Style: Apply the style of the surrounding content to the item pasted within that content.
+Shift–Command–Minus sign (-): Decrease the size of the selected item.
+Shift–Command–Plus sign (+): Increase the size of the selected item. Command–Equal sign (=) performs the same function.
