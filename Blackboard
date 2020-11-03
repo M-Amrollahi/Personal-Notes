@@ -25,3 +25,11 @@ in which case your only option is to compile yourself
 https://www.makeuseof.com/tag/binary-source-packages-use/
 
 Some programs load the information stored in their config files when they start. Meanwhile others periodically check the config file to see if it has been changed.
+
+
+
+
+
+
+#automate the functions like , click, type, change the mouse position
+pyautogui
