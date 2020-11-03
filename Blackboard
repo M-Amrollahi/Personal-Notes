@@ -1,2 +1,27 @@
 # digikala link
 https://www.digikala.com/landing-page/?pageno=1&sortby=4
+
+
+Advantages of installing a package from source:
+-You can install the latest version and can always stay updated, whether it be a security patch or a new feature.
+-Allows you to trim down the features while installing so as to suit your needs.
+-Similarly you can add some features which may not be provided in the binary.
+-Install it in a location you wish.
+-In case of some software you may provide your hardware specific info for a suitable installation.
+In short installing from source gives you heavy customization option at the same time it takes a lot of effort, 
+while installation from binary is easier but you may not be able to customize as you wish.
+
+#installing from package :
+-They are much easier to install
+-They are specifically designed to work with your distro
+-They are sometimes patched by the package maintainer to fix distro specific bugs
+-The package manager will uninstall them
+-The package manager will manage all dependencies for you
+-The package manager will take care of updates
+-You don't need to install developer tools on your system (compilers, make etc)
+However, sometimes the packaged version is an old version or even worse, there is no packaged version;
+in which case your only option is to compile yourself
+
+https://www.makeuseof.com/tag/binary-source-packages-use/
+
+Some programs load the information stored in their config files when they start. Meanwhile others periodically check the config file to see if it has been changed.
