@@ -77,3 +77,6 @@ pip3 show <package name>
 rm -r ./*
 rm -r ./.*
 ----------------------------------------------------------------------------------------
+
+#find out the file type (eg : demo.cast: JSON data)
+file <filename>
