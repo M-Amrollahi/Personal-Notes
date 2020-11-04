@@ -325,6 +325,8 @@ else:
   
 #one-line for
 evenNumbers =[x for x in range(11) if x % 2 == 0]
+
+ odds = [x for x in int if x%2!=0]
   
 --------------------------------------
 Python Function:
