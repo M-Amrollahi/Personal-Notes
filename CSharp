@@ -8,3 +8,24 @@ public static string Rgb(int r, int g, int b)
              $"{(g > 255 ? 255 : g < 0 ? 0 : g):X2}" +
              $"{(b > 255 ? 255 : b < 0 ? 0 : b):X2}";
   }
+  
+  //Func with lambda expression
+  public static string Rgb(int r, int g, int b)
+  {
+      Func<int, string> f = x => ((x < 16) ? "0" : "") + ((x > 255) ? 255 : (x < 0) ? 0 : x).ToString("X");
+      return f(r) + f(g) + f(b);
+  }
+  
+//the only output
+Func<int> getRandomNumber = () => new Random().Next(1, 100);
+//Or 
+Func<int, int, int>  Sum  = (x, y) => x + y;
+//
+Func<int> getRandomNumber = delegate()
+                            {
+                                Random rnd = new Random();
+                                return rnd.Next(1, 100);
+                            };
+                         
+------------------------------------------------------------------------------------------------------
+
