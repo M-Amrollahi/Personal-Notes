@@ -1,0 +1,10 @@
+//Convert to base 16
+return String.Format("{0:X2}{1:X2}{2:X2}", r, g, b);
+
+///Conver rgb to string html
+public static string Rgb(int r, int g, int b) 
+  {
+      return $"{(r > 255 ? 255 : r < 0 ? 0 : r):X2}" + 
+             $"{(g > 255 ? 255 : g < 0 ? 0 : g):X2}" +
+             $"{(b > 255 ? 255 : b < 0 ? 0 : b):X2}";
+  }
