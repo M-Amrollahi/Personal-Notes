@@ -570,3 +570,22 @@ print(response.json())
 in the interactive interpreter, the single underscore (_) is bound to the last expression evaluated.
 --------------------------------------------------------------------------------------------
 
+#You can return the lambda like as an object, with predifined argument.
+#in this example, y can have value, but next we can pass x to lambda
+def plus(y): return lambda x: x+y
+
+#eg:
+id_ = lambda x: x
+number = lambda x: lambda f=id_: f(x)
+zero, one, two, three, four, five, six, seven, eight, nine = map(number, range(10))
+plus = lambda x: lambda y: y + x
+minus = lambda x: lambda y: y - x
+times = lambda x: lambda y: y * x
+divided_by = lambda x: lambda y: y / x
+
+seven(times(five()))
+--------------------------------------------------------------------------------------------
+
+eval("2+3")
+exec("print(x)")
+--------------------------------------------------------------------------------------------
