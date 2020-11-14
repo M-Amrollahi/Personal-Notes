@@ -594,6 +594,21 @@ product = lambda f, n: lambda x: f(x)*n
   
 ans = product(square, 2)(10) 
 print(ans) 
+
+
+
+#Nested function - closure
+def has_permission(page):
+    def inner(username):
+        if username == 'Admin':
+            return "'{0}' does have access to {1}.".format(username, page)
+        else:
+            return "'{0}' does NOT have access to {1}.".format(username, page)
+    return inner
+current_user = has_permission('Admin Area')
+print(current_user('Admin'))
+random_user = has_permission('Admin Area')
+print(random_user('Not Admin'))
 --------------------------------------------------------------------------------------------
 
 eval("2+3")
