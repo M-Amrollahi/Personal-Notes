@@ -67,6 +67,14 @@ print("xcv\x48")
 txt = "\110\145\154\154\157"
 print(txt)
 
+
+txt = "Hi Sam!";
+x = "mSa";
+y = "eJo";
+mytable = txt.maketrans(x, y);
+print(txt.translate(mytable));
+
+
 capitalize()	  	Converts the first character to upper case
 casefold()    		Converts string into lower case
 center()	      	Returns a centered string
@@ -111,7 +119,8 @@ title()	        	Converts the first character of each word to upper case
 translate()	    	Returns a translated string
 upper()	        	Converts a string into upper case
 zfill()	        	Fills the string with a specified number of 0 values at the beginning
---------------------------------------
+----------------------------------------------------------------------------
+
 x = 200
 print(isinstance(x, int))
 
@@ -142,7 +151,7 @@ a = b
 b +=1
 print(a)
 print(b)
---------------------------------------
+----------------------------------------------------------------------------
 List is a collection which is ordered and changeable. Allows duplicate members.
 Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 Set is a collection which is unordered and unindexed. No duplicate members.
