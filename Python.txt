@@ -659,3 +659,11 @@ xylop
 data = {'first': 'Hodor', 'last': 'Hodor!'}
 '{first} {last}'.format(**data)
 Hodor Hodor!
+
+--------------------------------------------------------------------------------------------
+
+class add(int):
+    def __call__(self,n):
+        return add(self+n)
+
+print(add(9)(2)(3)) ### 9+2+3=14
