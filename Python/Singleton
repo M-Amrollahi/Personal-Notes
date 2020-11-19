@@ -1,0 +1,21 @@
+class cls_test(object):
+    instance = None
+    
+    def __new__(cls):
+        if cls.instance == None:
+            print("salll")
+            cls.instance = super().__new__(cls)
+            cls.instance.is_init = False 
+        return cls.instance
+    def __init__(self):
+        return
+#@classmethod
+        
+
+a = cls_test()
+b = cls_test()
+
+print(type(a))
+
+
+print(id(a) , id(b))
