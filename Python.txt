@@ -17,8 +17,68 @@ x = bytes(5)
 b'\x00\x00\x00\x00\x00'
 x = bytearray(5)
 x = memoryview(bytes(5))
---------------------------------------
+----------------------------------------------------------------------------
 z = -87.7e100
+----------------------------------------------------------------------------
+#Built-in functions
+
+bin(x)
+Convert an integer number to a binary string prefixed with “0b”
+bin(3)
+'0b11'
+f'{14:#b}', f'{14:b}'
+('0b1110', '1110')
+
+breakpoint(*args, **kws)
+This function drops you into the debugger at the call site. Can use same as IDE with Pdb
+
+
+bytearray("abcd","uft-8"/"ascii")
+bytearray(3)
+
+
+callable(object)
+
+
+dir([object])
+Without arguments, return the list of names in the current local scope. 
+With an argument, attempt to return a list of valid attributes for that object.
+
+c,d = divmod(a, b)
+
+
+seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+
+
+hex(x)
+'%#x' % 255, '%x' % 255, '%X' % 255
+('0xff', 'ff', 'FF')
+format(255, '#x'), format(255, 'x'), format(255, 'X')
+('0xff', 'ff', 'FF')
+f'{255:#x}', f'{255:x}', f'{255:X}'
+('0xff', 'ff', 'FF')
+
+class int(x, base=10)
+int("1001",2)
+9
+
+a = iter(object[, sentinel])
+a.__next__()
+
+locals() globals()
+
+min(iter) max(iter)
+
+next(iterator[, default])
+
+reversed(seq)
+Return a reverse iterator. 
+
+
+class str(object='')
+class str(object=b'', encoding='utf-8', errors='strict')
 --------------------------------------
 #convertascii to string
 chr(97)
