@@ -727,3 +727,16 @@ class add(int):
         return add(self+n)
 
 print(add(9)(2)(3)) ### 9+2+3=14
+
+--------------------------------------------------------------------------------------------
+from collections import Counter
+
+def solve(a):
+    c = Counter(a)
+    return sorted(a, key=lambda k: (-c[k], k))
+    
+def solve(arr):
+    return sorted(arr, key= lambda x: (-arr.count(x), x))
+    
+solve([2,3,5,3,7,9,5,3,7]) = [3,3,3,5,5,7,7,2,9]
+--------------------------------------------------------------------------------------------
