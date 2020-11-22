@@ -267,6 +267,9 @@ and that function will be used on each value in the list being sorted to determi
 >>> list(range(-5, 5))
 [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4]
 
+
+#usefull itertools : https://docs.python.org/3/library/itertools.html#module-itertools
+
 ----------------------------------------------------------------------------
 Technically, in Python, an iterator is an object which implements the iterator protocol, 
 which consist of the methods __iter__() and __next__().
