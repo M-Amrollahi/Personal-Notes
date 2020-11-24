@@ -127,3 +127,14 @@ y_pred= regression_model.predict(x)
 r2Score = r2_score(y, y_pred) 
 #here y is our original value 
 print(r2Score)
+
+
+
+### y = mx+c . use gradient descend to minimize the error
+for i in range(epochs):
+    Y_pred=m*x+c
+    Dm = (-2/n)*sum(x*(y-Y_pred))
+    Dc = (-2/n)*sum(y-Y_pred)
+    m = m-L*Dm
+    c = c-L*Dc
+print(m,c)
