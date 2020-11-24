@@ -1,0 +1,129 @@
+https://medium.com/swlh/linear-regression-explained-for-beginners-in-machine-learning-9e74f168d8a8
+
+y: dependent
+x1,x2,... = indepemdent
+
+Regression Types :
+Linear Regression
+Multiple Linear Regression
+Polynomial Regression
+Decision Tree Regression
+Random Forest Regression
+
+What Is Linear Regression?
+Linear: The word linear comes from the Latin word linearis, which means pertaining to or resembling a line
+Regression: a kind statistical technique for estimating the relationships among dependent & independent variables.
+
+We use linear regression to find the relationship between dependent & independent variables to find the best attribute 
+(input variable)to use for model building in solving the regression type problems.
+
+Simple linear regression:
+y​=β0​+β1​X
+
+Multiple Linear Regression:
+​yi​=β0​+β1​xi1​+β2​xi2​+…+βp​xip​+ϵ
+
+
+Key Assumptions In the Linear Regression Model:
+If we are building a linear regression model we need to take care of the following assumptions, in order to build an effective model that works well.
+-The Dependent variable is continuous
+-There is a Linear relationship between Dependent Variable and Independent Variable.
+-There is no Multicollinearity (no relationship between Independent variables
+-Residuals should follow Normal Distribution.
+-Residuals should have constant variance: Homoscedasticity
+-Residuals should be independently distributed/no autocorrelation
+
+Gradient Descent:
+It works by starting with random values for each coefficient. 
+The sum of the squared errors is calculated for each pair of input and output values. 
+A learning rate is used as a scale factor and the coefficients are updated in the direction towards minimizing the error.
+The process is repeated until a minimum sum squared error is achieved or no further improvement is possible. 
+Here we select a learning rate (alpha) parameter that determines the size of the improvement step to take on each iteration of the procedure. 
+We will look into it in detail later as this is out of scope for today’s article
+
+Regularization:
+Lasso Regression: where Ordinary Least Squares is modified to also minimize the absolute sum of the coefficients (called L1 regularization).
+Ridge Regression: where Ordinary Least Squares is modified to also minimize the squared absolute sum of the coefficients (called L2 regularization).
+
+
+import numpy as np
+import pandas as pd
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) 
+y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12]) 
+# number of observations/points 
+n = np.size(x)
+#Lets plot a scatter plot for the given values 
+colors = np.random.rand(n)
+area = 100 # 0 to 15 point radii
+plt.scatter(x, y, area, colors, alpha=0.5)
+
+
+#Step2 calculating slope & intercept #b0= (Σy)(Σx2) - (Σx)(Σxy)/ n(Σx2) - (Σx)2
+#b1=(slope)= n (Σxy) - (Σx)(Σy) /n(Σx2) - (Σx)2#mean of x and y vector 
+m_x, m_y = np.mean(x), np.mean(y)# calculating cross-deviation and deviation about x 
+SS_xy = np.sum(y*x) - n*m_y*m_x 
+SS_xx = np.sum(x*x) - n*m_x*m_x 
+  
+# calculating regression coefficients 
+b1 = SS_xy / SS_xx 
+b0 = m_y - b1*m_x 
+  
+print("Coefficient b1 is: ",b1 )
+print("Coefficient b0 is: ",b0 )
+
+
+#Step 3 : Let's plot the scatter plot along with predicted y value #based on our slope & intercept#plotting the actual points as scatter plot 
+plt.scatter(x, y, color = "m", marker = "o", s = 100) 
+# predicted response vector 
+y_pred = b0 + b1*x# plotting the regression line 
+plt.plot(x, y_pred, color = "g") 
+  
+# putting labels 
+plt.xlabel('x') 
+plt.ylabel('y') 
+  
+#show plot 
+plt.show()
+
+
+***R-squared
+You cannot use R-squared to determine whether the coefficient estimates and predictions are biased, which is why you must assess the residual plots.
+Caution: R-squared does not indicate if a regression model provides an adequate fit to your data. 
+A good model can have a low R2 value. On the other hand, a biased model can have a high R2 value!
+So there is one another type of R2: adjusted R-squared and predicted R-squared. 
+These two statistics address particular problems with R-squared. They provide extra information by which you can assess your regression model’s goodness-of-fit. 
+
+
+with sklearn:
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.linear_model import LinearRegression
+
+x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).reshape(-1,1) 
+y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12]) 
+
+#invoke the LinearRegression function and find the bestfit model on #our given 
+regression_model = LinearRegression()
+regression_model.fit(x, y) #this will give the best fit line # Let us explore the coefficients for each of the independent #
+
+attributesb1 = regression_model.coef_
+b0 = regression_model.intercept_
+print("b1 is: {} and b0 is: {}".format(b1, b0))
+plt.scatter(x, y, color = "m", marker = "o", s = 100) 
+plt.plot(x, b1*x+b0)
+
+
+##calculate R2
+#sklearn has a function to calculate R-Squared value as seen #below
+from sklearn.metrics import r2_score
+#y_pred is the predicted value which our linear regression model #predicted when we plotted the best fit line 
+y_pred= regression_model.predict(x)
+r2Score = r2_score(y, y_pred) 
+#here y is our original value 
+print(r2Score)
