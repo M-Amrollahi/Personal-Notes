@@ -743,3 +743,40 @@ def solve(arr):
     
 solve([2,3,5,3,7,9,5,3,7]) = [3,3,3,5,5,7,7,2,9]
 --------------------------------------------------------------------------------------------
+@property
+
+#1
+class Celsius:
+    def __init__(self, temperature = 0):
+        self.temperature = temperature
+    def to_fahrenheit(self):
+        return (self.temperature * 1.8) + 32
+	
+#2	
+# Making Getters and Setter methods
+class Celsius:
+    def __init__(self, temperature=0):
+        self.set_temperature(temperature)
+
+    def to_fahrenheit(self):
+        return (self.get_temperature() * 1.8) + 32
+
+    # getter method
+    def get_temperature(self):
+        return self._temperature
+
+    # setter method
+    def set_temperature(self, value):
+        if value < -273.15:
+            raise ValueError("Temperature below -273.15 is not possible.")
+        self._temperature = value
+
+
+#3
+# using property class
+.....
+    # creating a property object
+    temperature = property(get_temperature, set_temperature)
+    
+####property(fget=None, fset=None, fdel=None, doc=None)
+--------------------------------------------------------------------------------------------
