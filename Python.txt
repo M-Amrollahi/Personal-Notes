@@ -785,3 +785,40 @@ python mangling
 #https://medium.com/analytics-vidhya/python-name-mangling-and-how-to-use-underscores-e67b529f744f
 When in doubt about python naming, Pep-8 is a good place to start - but quickly _var is a weak “private” or “protected” indicator, __var is used for name mangling and should generally be avoided if possible, var_ is used to avoid naming collisions with python’s keywords, __var__ is used by python’s magic methods, and finally, _ is used as a variable for assigning unused values.
 --------------------------------------------------------------------------------------------
+##################SciPy
+#
+NumPy is capable of finding roots for polynomials and linear equations, but it can not find roots for non linear equations
+#finding root
+from scipy.optimize import root
+from math import cos
+def eqn(x):
+  return x + cos(x)
+myroot = root(eqn, 0)
+print(myroot.x)
+
+
+###minimize the function
+from scipy.optimize import minimize
+def eqn(x):
+  return x**2 + x + 2
+mymin = minimize(eqn, 0, method='BFGS')
+##have callback
+print(mymin)
+
+
+### Statistics mean,skew,...
+import numpy as np
+from scipy.stats import describe
+v = np.random.normal(size=100)
+res = describe(v)
+print(res)
+
+
+#### Interpolation
+from scipy.interpolate import interp1d
+import numpy as np
+xs = np.arange(10)
+ys = 2*xs + 1
+interp_func = interp1d(xs, ys)
+newarr = interp_func(np.arange(2.1, 3, 0.1))
+print(newarr)
