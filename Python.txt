@@ -780,3 +780,7 @@ class Celsius:
     
 ####property(fget=None, fset=None, fdel=None, doc=None)
 --------------------------------------------------------------------------------------------
+python mangling
+#https://medium.com/analytics-vidhya/python-name-mangling-and-how-to-use-underscores-e67b529f744f
+When in doubt about python naming, Pep-8 is a good place to start - but quickly _var is a weak “private” or “protected” indicator, __var is used for name mangling and should generally be avoided if possible, var_ is used to avoid naming collisions with python’s keywords, __var__ is used by python’s magic methods, and finally, _ is used as a variable for assigning unused values.
+--------------------------------------------------------------------------------------------
