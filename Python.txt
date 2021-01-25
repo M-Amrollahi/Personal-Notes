@@ -33,7 +33,9 @@ breakpoint(*args, **kws)
 This function drops you into the debugger at the call site. Can use same as IDE with Pdb
 
 
-bytearray("abcd","uft-8"/"ascii")
+bytearray("\x70","ascii") #bytearray(b"p")
+bytearray("اب","utf-8") #bytearray(b'\xd8\xa7\xd8\xa8')
+
 bytearray(3)
 
 
@@ -80,7 +82,7 @@ Return a reverse iterator.
 class str(object='')
 class str(object=b'', encoding='utf-8', errors='strict')
 --------------------------------------
-#convertascii to string
+#convert ascii to string
 chr(97)
 'a'
 
