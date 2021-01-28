@@ -85,3 +85,10 @@ file <filename>
 #compile c++ file
 g++ program.cpp -o <output file>
 ./output_file
+----------------------------------------------------------------------------------------
+lscpu
+hwinfo
+lspci
+
+Hardware info
+list the cpu config
