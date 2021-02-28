@@ -788,6 +788,104 @@ python mangling
 When in doubt about python naming, Pep-8 is a good place to start - but quickly _var is a weak “private” or “protected” indicator, __var is used for name mangling and should generally be avoided if possible, var_ is used to avoid naming collisions with python’s keywords, __var__ is used by python’s magic methods, and finally, _ is used as a variable for assigning unused values.
 --------------------------------------------------------------------------------------------
 ##################SciPy
+
+
+
+Array Creation
+arange, array, copy, empty, empty_like, eye, fromfile, fromfunction, identity,
+linspace, logspace, mgrid, ogrid, ones, ones_like, r_, zeros, zeros_like
+
+Conversions
+ndarray.astype, atleast_1d, atleast_2d, atleast_3d, mat
+
+Manipulations
+array_split, column_stack, concatenate, diagonal, dsplit, dstack, hsplit, 
+hstack, ndarray.item, newaxis, ravel, repeat, reshape, resize, squeeze, swapaxes, take, transpose, vsplit, vstack
+
+Questions
+all, any, nonzero, where
+
+Ordering
+argmax, argmin, argsort, max, min, ptp, searchsorted, sort
+
+Operations
+choose, compress, cumprod, cumsum, inner, ndarray.fill, imag, prod, put, putmask, real, sum
+
+Basic Statistics
+cov, mean, std, var
+
+Basic Linear Algebra
+cross, dot, outer, linalg.svd, vdot
+
+Choose:			
+# make a matrix with numpy 
+gfg = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] 			
+# applying numpy.choose() method 
+geeks = np.choose([2, 0, 1], gfg) 
+array([7 2 6])
+#####################
+Masking:
+In [3]: numbers
+array([[ 5, 6,  8, 10, 12, 14],
+       [16, 18, 20, 22, 24, 26],
+       [28, 30, 32, 34, 36, 38],
+       [40, 42, 44, 46, 48, 50]])
+
+In [4]: mask = numbers % 4 == 0
+
+In [5]: mask
+Out[5]:
+array([[False, False,  True, False,  True, False],
+       [ True, False,  True, False,  True, False],
+       [ True, False,  True, False,  True, False],
+       [ True, False,  True, False,  True, False]])
+
+In [6]: numbers[mask]
+Out[6]: array([ 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48])
+
+In [7]: by_four = numbers[numbers % 4 == 0]
+
+In [8]: by_four
+Out[8]: array([ 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48])
+#############################
+
+arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+
+##3 inner loops
+for x in np.nditer(arr):
+  print(x)
+  
+1
+2
+3
+4
+5
+6
+7
+8
+#############################
+#search in array with indexes
+arr = np.array([1, 2, 3, 4, 5, 4, 4])
+x = np.where(arr == 4)
+print(x)
+(array([3, 5, 6]),)
+
+##searchsorted assume that the array is sorted
+arr = np.array([1, 3, 5, 7])
+x = np.searchsorted(arr, [2, 4, 6])
+print(x)
+The return value is an array: [1 2 3] containing the three indexes where 2, 4, 6 would be inserted in the original array to maintain the order.
+#############################
+>>> a = np.arange(5)
+>>> a[[0,0,2]]=[1,2,3]
+>>> a
+array([2, 1, 3, 3, 4])
+#############################
+Where if then else
+np.where(a%2==0,1000,2000)
+
+#############################
+
 #
 NumPy is capable of finding roots for polynomials and linear equations, but it can not find roots for non linear equations
 #finding root
