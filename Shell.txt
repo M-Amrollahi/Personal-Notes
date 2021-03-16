@@ -31,6 +31,10 @@ brew uses --installed [Formula]
 
 #Which packages are not used by any other package
 brew leaves
+
+###clean up cache brew
+brew cleanup --prune=all
+rm -rd "$(brew --cache)"
 ----------------------------------------------------------------------------------------
 #remove folder with some files
 rm -rf some_dir
