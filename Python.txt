@@ -117,6 +117,43 @@ price = 49.95
 myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
 print(myorder.format(quantity, itemno, price))
 
+
+#print options
+#Padding and aligning strings
+'{:>10}'.format('test')
+      test
+      
+'{:10}'.format('test')
+test      
+
+'{:_<10}'.format('test')
+test______
+
+'{:^10}'.format('test')
+   test   
+   
+'{:.5}'.format('xylophone')
+xylop
+
+'{:10.5}'.format('xylophone')
+xylop     
+
+'{:f}'.format(3.141592653589793)
+3.141593
+
+'{:4d}'.format(42)
+  42
+  
+'{:06.2f}'.format(3.141592653589793)
+003.14
+
+'{:04d}'.format(42)
+0042
+
+data = {'first': 'Hodor', 'last': 'Hodor!'}
+'{first} {last}'.format(**data)
+Hodor Hodor!
+
 --------------------------------------
 Strings
 txt = "The rain in Spain stays mainly in the plain"
@@ -687,43 +724,6 @@ print(random_user('Not Admin'))
 
 eval("2+3")
 exec("print(x)")
---------------------------------------------------------------------------------------------
-
-#print options
-#Padding and aligning strings
-'{:>10}'.format('test')
-      test
-      
-'{:10}'.format('test')
-test      
-
-'{:_<10}'.format('test')
-test______
-
-'{:^10}'.format('test')
-   test   
-   
-'{:.5}'.format('xylophone')
-xylop
-
-'{:10.5}'.format('xylophone')
-xylop     
-
-'{:f}'.format(3.141592653589793)
-3.141593
-
-'{:4d}'.format(42)
-  42
-  
-'{:06.2f}'.format(3.141592653589793)
-003.14
-
-'{:04d}'.format(42)
-0042
-
-data = {'first': 'Hodor', 'last': 'Hodor!'}
-'{first} {last}'.format(**data)
-Hodor Hodor!
 
 --------------------------------------------------------------------------------------------
 
