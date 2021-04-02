@@ -282,6 +282,15 @@ setdefault()	Returns the value of the specified key. If the key does not exist: 
 update()  	Updates the dictionary with the specified key-value pairs
 values()	Returns a list of all the values in the dictionary
 
+# dictionary with mixed keys
+my_dict = {'name': 'John', 1: [2, 4, 3]}
+# using dict()
+my_dict = dict({1:'apple', 2:'ball'})
+# from sequence having each item as a pair
+my_dict = dict([(1,'apple'), (2,'ball')])
+
+
+
 thistuple = ("apple", "banana", "cherry")
 thislist = ["apple", "banana", "cherry"]
 thisset = {"apple", "banana", "cherry"}
@@ -356,6 +365,9 @@ sorted(list1,key=itemgetter(1,2,0))
 #sort heap
 from heapq import nsmallest
 nsmallest(4,numbers)
+
+*do nothing
+lambda *args: None
 ----------------------------------------------------------------------------
 Map 
 map() function returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable (list, tuple etc.)
