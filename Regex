@@ -1,0 +1,2 @@
+d(?=r)       matches a d only if is followed by r, but r will not be part of the overall regex match ---- third -d-rone
+(?<=r)d      matches a d only if is preceded by an r, but r will not be part of the overall regex match --- thir-d- drone
