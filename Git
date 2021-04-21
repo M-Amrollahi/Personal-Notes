@@ -140,3 +140,8 @@ git restore --source 27hq6251 index.txt
 
 #go back 2 step commit (do not remove the rest commits)
 git reset HEAD~2
+
+
+git config --list --system 
+git config --list --global
+git config --list --local
