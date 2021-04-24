@@ -962,3 +962,23 @@ h <topic>	Show help for a command or topic.
 h pdb	Show the full pdb documentation.
 q		Quit the debugger and exit.
 --------------------------------------------------------------------------------------------
+https://medium.com/analytics-vidhya/polynomial-fitting-in-python-using-just-one-line-of-code-f1638a4b3678
+#Simple polynimila fitting
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0,1,num=1000)
+
+f = 1/4
+
+sine = np.sin(2*np.pi*f*x) + np.random.normal(scale=0.1, size=len(x))
+fig, ax = plt.subplots()
+ax.plot(np.arange(1000), sine,)
+ax.plot(np.arange(100), np.ones((100,)),"ro")
+
+poly = np.polyfit(x, sine, deg=10)
+
+fig, ax = plt.subplots()
+ax.plot(sine, label='data')
+ax.plot(np.polyval(poly, x), label='fit')
+ax.legend()
