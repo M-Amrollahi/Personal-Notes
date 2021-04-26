@@ -1,0 +1,13 @@
+How to debug:
+
+//Build and set the output file
+gcc -g --std=c99 -Wall hello.c -o hello
+
+//cmd
+lldb hello
+
+options:
+1- run
+2- breakpoint set --line 10
+3- frame variable // print all the vars declared in the scope
+4- c:continue  s:step
