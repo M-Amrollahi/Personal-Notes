@@ -1002,3 +1002,12 @@ def f_test(x,y):
 
 f_test(100,5)
 f_test(100,0)
+
+--------------------------------------------------------------------------------------------
+##some Pro Techniques
+#Multiple Inputs in One Go
+a,b,c=input("Enter three inputs ").split()
+
+#Most Repeated Object
+li=[1,5,8,6,5,9,6,9,5,6,9,6,5,4,"a","a","b","b","a","a","a"]
+print(max(set(li), key=li.count))
