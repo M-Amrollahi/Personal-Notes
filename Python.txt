@@ -982,3 +982,23 @@ fig, ax = plt.subplots()
 ax.plot(sine, label='data')
 ax.plot(np.polyval(poly, x), label='fit')
 ax.legend()
+
+--------------------------------------------------------------------------------------------
+#Simple decorator
+def dec_nonzero(operator):
+    def inner(x,y):
+        if y == 0:
+            print("! ZERO Devision....")
+            return
+        return operator(x,y)
+             
+    return inner
+
+
+@dec_nonzero
+def f_test(x,y):
+    print("running f_test...")
+    return x/y
+
+f_test(100,5)
+f_test(100,0)
