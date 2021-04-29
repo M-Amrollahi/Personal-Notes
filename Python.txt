@@ -446,6 +446,14 @@ for x in range(6):
 else:
   print("Finally finished!")
   
+for n in range(2, 15):
+    for m in range(2, n):
+        if n % m == 0:
+            print(f'{n} is not a prime')
+            break
+    else: 
+        print(f'{n} is a prime*****')
+  
 #one-line for
 evenNumbers =[x for x in range(11) if x % 2 == 0]
 
