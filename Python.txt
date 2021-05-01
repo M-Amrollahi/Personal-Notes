@@ -1019,3 +1019,20 @@ a,b,c=input("Enter three inputs ").split()
 #Most Repeated Object
 li=[1,5,8,6,5,9,6,9,5,6,9,6,5,4,"a","a","b","b","a","a","a"]
 print(max(set(li), key=li.count))
+
+--------------------------------------------------------------------------------------------
+##Disassemble the function to see the details what is happening inside
+import dis
+def a():
+  data = [1,2,3,4,5,6,7,8]
+  x = data[5]
+  print(x)
+
+def b():
+  data = (1,2,3,4,5,6,7,8)
+  x = data(5)
+  print(x)
+print("----------:List:------")
+dis.dis(a)
+print("----------:Tuple:------")
+dis.dis(b)
