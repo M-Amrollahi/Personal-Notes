@@ -1036,3 +1036,19 @@ print("----------:List:------")
 dis.dis(a)
 print("----------:Tuple:------")
 dis.dis(b)
+
+--------------------------------------------------------------------------------------------
+#We can use only logging for showing on stream or on file. this is about the handler
+import logging
+
+log = logging.getLogger("application")
+
+sh = logging.StreamHandler()
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s", "", "%")
+sh.setFormatter(formatter)
+log.addHandler(sh)
+
+log.addHandler(logging.FileHandler('logging.txt'))
+log.setLevel(logging.DEBUG)
+
+log.info("Starting application")
