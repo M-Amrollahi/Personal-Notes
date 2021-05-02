@@ -1052,3 +1052,19 @@ log.addHandler(logging.FileHandler('logging.txt'))
 log.setLevel(logging.DEBUG)
 
 log.info("Starting application")
+
+--------------------------------------------------------------------------------------------
+##Serilization in python
+import pickle
+dict1 = {1:2, 3:4, 5:60}
+
+dumpfile = "testpic"
+myfile = open(dumpfile,"wb")
+
+pickle.dump(dict1,myfile)
+myfile.close()
+
+infile = open(dumpfile,'rb')
+new_dict = pickle.load(infile, encoding='latin1')
+infile.close()
+--------------------------------------------------------------------------------------------
