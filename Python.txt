@@ -1068,3 +1068,13 @@ infile = open(dumpfile,'rb')
 new_dict = pickle.load(infile, encoding='latin1')
 infile.close()
 --------------------------------------------------------------------------------------------
+#we can use partial function to set some params but run them with different params
+def f_test(p1,p2):
+    print("{p1} , {p2}")
+
+from functools import partial
+part = partial(f_test, "Hi")
+part("Mahdi")
+part("Ali")
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
