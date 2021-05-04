@@ -1011,6 +1011,19 @@ def f_test(x,y):
 f_test(100,5)
 f_test(100,0)
 
+
+
+##logging decorator for logging each function
+import time
+def logging_time(func):
+    """Decorator that logs time"""
+    def logger():
+        """Function that logs time"""
+        start = time.time()
+        func()
+        print(f"Finishing {func.__name__}: {time.time() - start:.5f} sec")
+
+    return logger
 --------------------------------------------------------------------------------------------
 ##some Pro Techniques
 #Multiple Inputs in One Go
