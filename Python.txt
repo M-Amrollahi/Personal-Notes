@@ -1090,4 +1090,15 @@ part = partial(f_test, "Hi")
 part("Mahdi")
 part("Ali")
 --------------------------------------------------------------------------------------------
+##Package livelossplot for watching live loss diag
+from livelossplot import PlotLossesKeras
+
+model.fit(X_train, Y_train,
+          epochs=10,
+          validation_data=(X_test, Y_test),
+          callbacks=[PlotLossesKeras()],
+          verbose=0)
+	 
+	 
+##package tensorwatch for debugging machine learning
 --------------------------------------------------------------------------------------------
