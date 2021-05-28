@@ -1115,4 +1115,19 @@ sys.version_info
 %%latex # treat the whole cell as latex scripts
 %%markdown #cell as markdown
 %who_ls #all the vars in list (#who_ls int --> all int vars)
+--------------------------------------------------------------------------------------------
+#since python  3.7 added (easy class)
+from dataclasses import dataclass
 
+@dataclass
+class Card:
+    rank: str
+    suit: str
+
+#merging two dict, the keys will iverwriten by next keys ans values
+merged = { **dict1, **dict2 }
+
+#most frequent value
+test = [1, 2, 3, 4, 2, 2, 3, 1, 4, 4, 4]
+print(max(set(test), key = test.count))
+--------------------------------------------------------------------------------------------
