@@ -1102,3 +1102,7 @@ model.fit(X_train, Y_train,
 	 
 ##package tensorwatch for debugging machine learning
 --------------------------------------------------------------------------------------------
+#check python version in python
+import sys
+sys.version_info
+--------------------------------------------------------------------------------------------
