@@ -100,3 +100,8 @@ list the cpu config
 copy files with regex
 cp *.jpg /test/test
 ----------------------------------------------------------------------------------------
+#to know the kernel version and details
+uname -r
+cat /etc/issue
+----------------------------------------------------------------------------------------
+lsb_release -a
