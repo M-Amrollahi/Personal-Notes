@@ -1106,3 +1106,13 @@ model.fit(X_train, Y_train,
 import sys
 sys.version_info
 --------------------------------------------------------------------------------------------
+#ipython
+%env : show environment vars
+%time [_ for i in range(10000)] # how much it takes to run
+%whos #all vars with value and datatype
+%%bash #treat the whole cell as a terminal console
+%%html #treat the whole cell as html script
+%%latex # treat the whole cell as latex scripts
+%%markdown #cell as markdown
+%who_ls #all the vars in list (#who_ls int --> all int vars)
+
