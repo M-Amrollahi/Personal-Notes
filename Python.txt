@@ -1144,4 +1144,13 @@ code = """
 """       
 
 print(timeit.timeit(stmt=code , number=100))
+----------------
+
+ns = np.linspace(100, 2000, 15, dtype=int)
+ts = [timeit.timeit('insertion_sort(lst)',
+                    setup='lst=list(range({})); random.shuffle(lst)'.format(n),
+                    globals=globals(),
+                    number=1)
+         for n in ns]
+plt.plot(ns, ts, 'or');
 --------------------------------------------------------------------------------------------
