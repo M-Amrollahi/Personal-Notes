@@ -1157,3 +1157,6 @@ plt.plot(ns, ts, 'or');
 #confusion matrix for classification
 disp = metrics.plot_confusion_matrix(clf, X_test, y_test)
 --------------------------------------------------------------------------------------------
+#for autocomplete
+%config Completer.use_jedi = False
+--------------------------------------------------------------------------------------------
