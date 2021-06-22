@@ -1181,3 +1181,15 @@ print(id(b))
 # Returns true if both the variables
 # are stored in same location
 print(a is b)
+
+--------------------------------------------------------------------------------------------
+#make sound on jupyter notebook
+import winsound
+duration = 1000
+freq = 440
+winsound.Beep(freq, duration)
+
+#On MAC
+import os
+os.system('say "Your program has now finished"'
+--------------------------------------------------------------------------------------------
