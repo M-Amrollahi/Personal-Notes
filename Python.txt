@@ -1160,3 +1160,24 @@ disp = metrics.plot_confusion_matrix(clf, X_test, y_test)
 #for autocomplete
 %config Completer.use_jedi = False
 --------------------------------------------------------------------------------------------
+Python utilizes a system, which is known as “Call by Object Reference” or “Call by assignment”. In the event that you pass arguments like whole numbers, strings or tuples to a function, the passing is like call-by-value because you can not change the value of the immutable objects being passed to the function. Whereas passing mutable objects can be considered as call by reference because when their values are changed inside the function, then it will also be reflected outside the function.
+Mutable: Call by reference (like list)
+Immutable: Call by value (like str and int)
+
+Binding Names to Objects:
+In python, each variable to which we assign a value/container is treated as an object. When we are assigning a value to a variable, we are actually binding a name to an object.
+Mutable : different ids
+immutable: same id
+a = "first"
+b = "first"
+# Returns the actual location
+# where the variable is stored
+print(id(a))
+
+# Returns the actual location
+# where the variable is stored
+print(id(b))
+
+# Returns true if both the variables
+# are stored in same location
+print(a is b)
