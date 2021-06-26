@@ -154,6 +154,9 @@ data = {'first': 'Hodor', 'last': 'Hodor!'}
 '{first} {last}'.format(**data)
 Hodor Hodor!
 
+#Thousand seperator
+print(f"The value of the company is {355555:,d}")
+The value of the company is 355,555
 --------------------------------------
 Strings
 txt = "The rain in Spain stays mainly in the plain"
