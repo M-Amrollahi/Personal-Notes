@@ -321,6 +321,16 @@ and that function will be used on each value in the list being sorted to determi
 
 #usefull itertools : https://docs.python.org/3/library/itertools.html#module-itertools
 
+
+#Astericks operator *
+def sum(a, b):
+    return a + b
+values = (1, 2)
+#unpack withoud name
+s = sum(*values)
+values = { 'a': 1, 'b': 2 }
+#unpack with name
+s = sum(**values)
 ----------------------------------------------------------------------------
 Technically, in Python, an iterator is an object which implements the iterator protocol, 
 which consist of the methods __iter__() and __next__().
