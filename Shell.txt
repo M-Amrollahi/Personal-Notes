@@ -108,4 +108,14 @@ lsb_release -a
 
 ----------------------------------------------------------------------------------------
 #pid recourses are busy
-lsof -D directory path
+lsof +D directory path
+----------------------------------------------------------------------------------------
+##Sftp put get
+put -r <sfloder> <dfolder>
+get -r <remote folder> <local folder>
+put <sfile> <dfolder>
+get <remote file> <local folder>
+----------------------------------------------------------------------------------------
+# list the processes
+ps -aux
+----------------------------------------------------------------------------------------
