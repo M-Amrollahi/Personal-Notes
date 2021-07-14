@@ -1206,3 +1206,21 @@ winsound.Beep(freq, duration)
 import os
 os.system('say "Your program has now finished"'
 --------------------------------------------------------------------------------------------
+#define class methid and static method
+class cls_A(object):
+    def __init__(self , xx):
+        self.x = x
+    def foo(self, x):
+        print(f"executing foo({self}, {x})")
+
+    @classmethod ## create object from cls_A
+    def class_foo(cls, x):
+        print(f"executing class_foo({cls}, {x})")
+	return cls(self , x)
+
+    @staticmethod
+    def static_foo(x):
+        print(f"executing static_foo({x})")
+a = A(44)
+b = cls_A.class_foo(55)
+--------------------------------------------------------------------------------------------
