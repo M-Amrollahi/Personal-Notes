@@ -1223,4 +1223,16 @@ class cls_A(object):
         print(f"executing static_foo({x})")
 a = A(44)
 b = cls_A.class_foo(55)
+
+
+when we create an object from a class, the attributes of the object will be stored in a dictionary called __dict__
+__slots++ makes it expecilitly, declare the dict and then it is faster than custmon method of declaring.
+class cls_t1(object):
+    __slots__ = ("a" , "m")
+    
+    def __init__(self , x ,y):
+    	self.a = x
+	self.m = y
+a= cls_t1()
+a.m = 5
 --------------------------------------------------------------------------------------------
