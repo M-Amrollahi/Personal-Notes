@@ -16,6 +16,9 @@ openssl dgst -sha256 -sign privkey_file.pem -out signSha_file test.txt # sign th
 openssl enc -base64 -in signSha_file -out signSha256Base64 # to readable file
 openssl dgst -sha256 -verify pubkey_file.pem -signature signSha_file test.txt # verify the sign
 
+
+ssh-keygen
+ssh-copy-id
 ----------------------------------------------------------------------------------------
 #Find macos dependencies packages
 brew deps [FORMULA]
