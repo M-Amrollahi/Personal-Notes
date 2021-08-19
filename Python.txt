@@ -1266,3 +1266,10 @@ df.groupby(by=["author_id"])["author_id"].count().sort_values()
 df.groupby(pd.Grouper(key='created_datetime', freq='1w')).count()
 
 
+.open c:\sqlite\db\chinook.db
+.database
+ATTACH DATABASE "c:\sqlite\db\chinook.db" AS chinook;
+.databases
+.exit
+.tables
+.schema albums
