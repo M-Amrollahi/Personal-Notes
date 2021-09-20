@@ -1297,3 +1297,10 @@ ATTACH DATABASE "c:\sqlite\db\chinook.db" AS chinook;
 .exit
 .tables
 .schema albums
+
+--------------------------------------------------------------------------------------------
+# Jupyter
+Change jupyter items in new (add kernels to jupyter)
+$jupyter kernelspec list
+In that folder, open up file kernel.json and edit option "display_name"
+
