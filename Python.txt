@@ -588,8 +588,8 @@ finally:
   raise TypeError("Only integers are allowed")
   
   #create new virtual environment
-  python3 -m venv MyEnv
-  source env/bin/activate
+  python3 -m venv ./envv
+  source envv/bin/activate
   
 ----------------------------------------------
 Python special variables:
