@@ -1303,4 +1303,14 @@ ATTACH DATABASE "c:\sqlite\db\chinook.db" AS chinook;
 Change jupyter items in new (add kernels to jupyter)
 $jupyter kernelspec list
 In that folder, open up file kernel.json and edit option "display_name"
+--------------------------------------------------------------------------------------------
 
+Regex
+#remove hashtah amd mention
+re.sub("(@[A-Za-z0-9]+)|(#[A-Za-z0-9]+)", " ")
+#remove url
+re.sub(r'http[s]?://\S+', '', text)
+#remove punctuation:
+re.sub("[\.\,\!\?\:\;\-\=]", " ", tweet)
+#remove html tag
+(r"<[^.]+>")
