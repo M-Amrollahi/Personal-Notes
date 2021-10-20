@@ -1314,3 +1314,26 @@ re.sub(r'http[s]?://\S+', '', text)
 re.sub("[\.\,\!\?\:\;\-\=]", " ", tweet)
 #remove html tag
 (r"<[^.]+>")
+
+--------------------------------------------------------------------------------------------
+Property:
+@property
+    def b(self): return self.__b
+    @b.setter
+    def b(self, b):
+        if type(b) is not int:
+            raise ValueError("'a' must be an integer")
+        if b < 0:
+            raise ValueError("'a' must be at least `0`")
+        self.__b = b
+
+@dataclass
+class T:
+    """Compute sum of parameters."""
+    
+    title: str = "result="
+    a: int = 2
+    b: int = 3
+
+    def result(self) -> str:
+        return self.title + str(self.a + self.b)
