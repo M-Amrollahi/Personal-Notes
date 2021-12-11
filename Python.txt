@@ -67,16 +67,16 @@ int("1001",2)
 9
 
 a = iter(object[, sentinel])
-a.__next__()
-
-locals() globals()
-
-min(iter) max(iter)
-
 next(iterator[, default])
+a.__next__()
 
 reversed(seq)
 Return a reverse iterator. 
+
+list of local and global variables
+locals() globals()
+
+min(iter) max(iter)
 
 
 class str(object='')
