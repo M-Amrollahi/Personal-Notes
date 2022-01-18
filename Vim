@@ -6,6 +6,8 @@ o -> new line bottom O -> above
 d -> delete
 J -> join 2 line
 G -> Go 1G -> go to first line (10G , 1G , G)
+b,B -> beging of the word
+e,E -> end of the word
 y -> copy (y , 2y, 3y... -> copy lines)
 p -> paste
 / -> search (n -> next , N -> previous)
