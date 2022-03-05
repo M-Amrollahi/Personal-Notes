@@ -23,3 +23,7 @@ d^ -> delete to start of line
 
 % -> to go to end of the ])}
 
+Indentation:
+1- Shift+V -> enter visual line mode
+2- shift + , (left) | shift+. (right)
+
