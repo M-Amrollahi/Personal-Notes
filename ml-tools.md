@@ -19,4 +19,11 @@
 [Medium](https://towardsdatascience.com/document-parsing-with-python-ocr-75543448e581)
 
 
+## Object Detection
+1. Facebook object detection (Detectron)
+2. YOLO
+
+
+
+
 
