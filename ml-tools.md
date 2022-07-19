@@ -11,3 +11,12 @@
 ## Search similarity, Search engine:
 
 1. Faiss by Facebook. Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM. It also contains supporting code for evaluation and parameter tuning. Faiss is written in C++ with complete wrappers for Python/numpy. [Github](https://github.com/facebookresearch/faiss)
+
+
+## OCR and Document parsing
+1. Processing documents as Text: extract text with PyPDF2, extract tables with Camelot or TabulaPy, extract figures with PyMuPDF.
+2. Converting documents into Image (OCR): conversion with pdf2image, extract data with PyTesseract plus many other supporting libraries, or just LayoutParser.
+[Medium](https://towardsdatascience.com/document-parsing-with-python-ocr-75543448e581)
+
+
+
