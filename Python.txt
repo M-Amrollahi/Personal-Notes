@@ -1337,3 +1337,9 @@ class T:
 
     def result(self) -> str:
         return self.title + str(self.a + self.b)
+
+--------------------------------------------------------------------------------------------
+** print all the outputs in a cell
+
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
