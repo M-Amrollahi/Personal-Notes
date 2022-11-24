@@ -24,6 +24,9 @@
 2. YOLO
 
 
+## Model Tracking
+1. [Tensorboard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
+
 
 
 
