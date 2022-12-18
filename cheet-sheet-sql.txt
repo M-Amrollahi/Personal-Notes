@@ -1,0 +1,123 @@
+-- Introduction
+
+https://gist.github.com/fmnobar/4c0ed446a1433d079f8c89c140df399f#file-cheat_sheet-sql
+
+ 
+SELECT column_1, column_2… [Returns entries per specified columns]
+SELECT * [Returns all entries]
+SELECT DISTINCT column_1, column_2… [Returns unique entries per specified columns]
+SELECT DISTINCT * [Returns all unique entries]
+ 
+FROM schema_name.table_name [Specifies table to return entries from]
+ 
+WHERE column_1 = ‘value’ [Specifies condition per column]
+May use =, >, <, >=, <=, <>
+ 
+WHERE column_1 = ‘value’ AND column_2 = ‘value’ [Specifies both conditions must be met]
+ 
+WHERE column_1 = ‘value’ OR column_2 = ‘value’ [Specifies one condition must be met]
+ 
+WHERE column_1 = ‘value’ AND (column_2 = ‘value’ OR column_3 = ‘value’)
+ 
+-- Aggregations
+
+SUM(column_1) [Returns summation of column]
+ 
+AVG(column_1) [Returns average of column]
+ 
+MIN(column_1) [Returns minimum of column]
+ 
+MAX(column_1) [Returns maximum of column]
+ 
+COUNT(column_1) [Returns count of entries of column]
+ 
+COUNT(DISTINCT column_1) [Returns unique count of entries of column]
+ 
+Aggregations require a GROUP BY clause, i.e. GROUP BY 1, 2 or GROUP BY column_1, column_2
+All non-aggregated columns are required to be in the GROUP BY clause
+ 
+-- Null Handling
+
+IS NULL [Evaluates if an entry is null]
+ 
+IS NOT NULL [Evaluates if an entry is not null]
+ 
+NVL(column_1, ‘alternative value’) [Replaces entry with an alternative value if found to be null]
+ 
+NULLIF(column_1,’value’) [Replaces entry with null if entry meets value]
+ 
+-- Aliases
+ 
+column_1 AS ‘value’ [Renames column]
+ 
+schema_name.table_name AS ‘value’ [Renames table]
+ 
+-- Joins (added in From and then join on primary keys)
+ 
+INNER JOIN schema_name.table_name ON table1.value1 = table2.value1 [Merges tables on matching values, contains only records with matching values found in both table 1 and table 2] 
+ 
+LEFT JOIN schema_name.table_name ON table1.value1 = table2.value1 [Merges tables on matching values, contains all records from table 1] 
+ 
+RIGHT JOIN schema_name.table_name ON table1.value1 = table2.value1 [Merges tables on matching values, contains all records from table 2] 
+ 
+FULL OUTER JOIN schema_name.table_name ON table1.value1 = table2.value1 [Merges tables on matching values, contains all records from both table 1 and table 2] 
+ 
+-- UNIONs
+
+UNION [Merges two tables whose structures are the same, removes duplicative records] 
+UNION ALL [Merges two tables whose structures are the same]
+ 
+-- Miscellaneous
+ 
+LIMIT x [Limits returned records to a specified number]
+ 
+ORDER BY 1, 2 or ORDER BY column_1, column_2 [Orders returned records by specified columns]
+ 
+LIKE ‘%value%’ [Used to find near matches when evaluating conditions]
+ 
+IN (‘value 1’,’value 2’) [Used to find matches within a list of values when evaluating conditions]
+ 
+BETWEEN ‘value 1’ AND ‘value 2’ [Used to find matches where an entry falls between two values when evaluating conditions] (inclusive)
+ 
+HAVING [Used in place of WHERE for aggregate clauses]
+(WHERE filters before data is grouped. HAVING filters after data is grouped.) 
+ 
+CASE WHEN column1 = ‘value’ THEN ‘value’ ELSE ‘value’ END AS ‘value’ [Returns entries by evaluating when/then statements]
+CASE WHEN A THEN X
+WHEN B THEN Y
+WHEN C THEN Z
+ELSE W
+END
+ 
+
+NOT [Used to limit to where a condition is not met]
+
+-- Date Management
+ 
+CURRENT_DATE [Returns current date]
+ 
+TO_CHAR (column name, 'date format') [converts the date to a character string in a specified format]
+Date formats:
+'YYYY/MM/DD'
+'YYYY:MM:DD'
+'Q' = Quarter number
+'MM' = Month number
+'Month' = Month name
+'W' = Week of the month (1-5; first week starts on the first day of the month)
+'WW' = Week number of year (1-53; first week starts on the first day of the year)
+'Day' = Day name
+'DDD' = Day of year (1-366)
+'DD' = Day of month (1-31)
+'D' = Day of week (1-7; Sunday is 1)
+'YYYY/MM/DD HH24:MI:SS' = Year, month, day, hour, minutes and seconds
+ 
+TO_DATE ('string', 'date format') [opposite of TO_CHAR]
+Wildcard: TO_DATE ('{RUN_DATE_YYYY-MM-DD}', 'YYYY-MM-DD')
+ 
+DATE_TRUNC ('datepart', column) [truncates a time stamps expression to a specified date part, such as hour, week or month]
+Datepart formats:
+'year' = truncates to the first second of the first hour of the first day of the year
+'quarter' = truncates to the first second/hour/day/quarter
+'month' = truncates to the first second/hour/day/month
+'week' = truncates to the first second/hour/day/week (Monday)
+'day' = truncates to the first second/hour/day
