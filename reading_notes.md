@@ -13,3 +13,9 @@
 ## How to get prepared for interview for data science. Topics.
 
 [link](https://medium.com/nerd-for-tech/60-days-plan-to-revise-data-science-concepts-0-to-100-interview-preparation-a30fc0696b48)
+
+## Contrasive learning. Negative samples and positive samples and anchor. simclr.
+
+[link](https://medium.com/aiguys/contrastive-learning-explained-17fa79f707bf)
+
+
