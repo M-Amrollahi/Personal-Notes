@@ -21,7 +21,7 @@
 ## How to classify unlabeled data?
 - ensemble learning: train some classifiers and label the data whenever almost all classifiers agree on that label
 - use simple knn and label the data with high confidence
-- train a classifier. Then pick some data and choose those with high confidence and add them to training set. iterate again.
+- train a classifier. Then pick some data and choose those with high confidence and add them to training set. iterate again. psuedo labeling.
 - active learning
 
 [link](https://medium.com/aiguys/how-to-classify-unlabeled-data-tricks-for-semisupervised-learning-57706ff04813)
