@@ -26,3 +26,28 @@
 
 [link](https://medium.com/aiguys/how-to-classify-unlabeled-data-tricks-for-semisupervised-learning-57706ff04813)
 
+## How to use pandas in efficient way. Dask. iterate.
+
+[link](https://towardsdatascience.com/14-techniques-to-make-your-pandas-workflow-lighting-fast-b00ff0ac9267)
+
+## How to build a question-answering model with t5. Dataset: translate from english to german. context, question, answer
+
+[link](https://towardsdatascience.com/creating-a-dutch-question-answering-machine-learning-model-3b666a115be3)
+
+## How to find out model/data drift? How detect it? types of drifts. NannyML package to detect drifts.
+
+Covariate shift: shift in input data (independent variables).
+Prior probability shift: shift in target variables.
+Concept drift: change the relation between input and target.
+
+
+[link](https://towardsdatascience.com/monitoring-machine-learning-models-a-tried-and-true-cure-for-a-data-scientists-insomnia-c45b0979a878)
+
+## Pydantic. define data in pythonic way. if we have data in different manners, we can change them in single unit shape.
+
+[link](https://towardsdatascience.com/easily-validate-user-generated-data-using-pydantic-5ace695cc3c8)
+
+## AI and types of reasoning. Inductive: Specific, Patern, General (like leaves to trees) . Deductive: General, Hypothesis, Specific (like clustering).
+
+[link](https://towardsdatascience.com/on-ai-and-types-of-reasoning-fc6980295158)
+
