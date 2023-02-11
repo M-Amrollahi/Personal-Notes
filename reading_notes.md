@@ -51,3 +51,8 @@ Concept drift: change the relation between input and target.
 
 [link](https://towardsdatascience.com/on-ai-and-types-of-reasoning-fc6980295158)
 
+## with this package you can fix the unicode char issues. ftfy.
+
+Correct the sentence using â€œftfyâ€\x9d.
+
+
