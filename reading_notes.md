@@ -33,6 +33,7 @@
 ## How to build a question-answering model with t5. Dataset: translate from english to german. context, question, answer
 
 [link](https://towardsdatascience.com/creating-a-dutch-question-answering-machine-learning-model-3b666a115be3)
+[link](https://medium.com/@xiaohan_63326/fine-tune-fine-tuning-bert-for-question-answering-qa-task-5c29e3d518f1)
 
 ## How to find out model/data drift? How detect it? types of drifts. NannyML package to detect drifts.
 
@@ -55,4 +56,23 @@ Concept drift: change the relation between input and target.
 
 Correct the sentence using â€œftfyâ€\x9d.
 
+## How to use mlflow to log whatever we need during the training models like loss, acc, model params and...
+```
+mlflow ui - backend-store-uri sqlite:///mlflow.db
+```
+```python
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
+mlflow.set_experiment("customer-sentiment-analysis")
+
+with mlflow.start_run():
+  mlflow.log_metric("accuracy", results[1])
+  mlflow.set_tag("developer", "Isaac")
+  mlflow.set_tag("algorithm", "MultinomialNB")
+  with open("models/" + model_name, 'wb') as fout:
+        pickle.dump((tv, classifier), fout)
+  mlflow.log_artifact(local_path="models/" + model_name, artifact_path="models_pickle")
+
+```
+
+[link](https://kargarisaac.medium.com/mlops-project-part-1-machine-learning-experiment-tracking-using-mlflow-f613feb22cd6)
 
