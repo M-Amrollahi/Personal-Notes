@@ -84,5 +84,17 @@ df.nlargest(3, columns=["A"])
 # filter
 filter subset of rows
 
+## in Series, .count() counts the data in series but does not include the NaN.
 
+## in Series, .size counts all the elements.
 
+## in Series, when we add two series, two elements with the same index will be added. otherwise, NaN.
+```python
+a+b
+0    NaN
+1    NaN
+2    NaN
+33   NaN
+33   NaN
+44   NaN
+```
