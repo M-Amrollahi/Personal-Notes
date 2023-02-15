@@ -98,3 +98,6 @@ a+b
 33   NaN
 44   NaN
 ```
+
+## .is_unique , .is_monotonic_increasing can be useful.
+
