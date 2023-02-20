@@ -28,5 +28,8 @@
 1. [Tensorboard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
 
 
+## OpenSearch:
+Powered by Lucene for searching and indexing.
 
-
+Here, he combines the vector search(using sentence transformer) and text search to get results:<br>
+[link](https://towardsdatascience.com/text-search-vs-vector-search-better-together-3bd48eb6132a)
