@@ -76,3 +76,8 @@ with mlflow.start_run():
 
 [link](https://kargarisaac.medium.com/mlops-project-part-1-machine-learning-experiment-tracking-using-mlflow-f613feb22cd6)
 
+
+## Self-supervised learning from Jeremy Howard:
+- With pretraining, you can use 1000x less data than starting from scratch.\
+- There is a paper the identified that using a few layers of some pre-trained model can improve the model training in case of time and accuracy.\ But, that is not huge, so we use SSL.
+[link](https://www.fast.ai/posts/2020-01-13-self_supervised.html)
