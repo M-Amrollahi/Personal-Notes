@@ -1,3 +1,7 @@
+## ML expressions:
+- Pretext tasks: learn features from data in models like self-supervised.
+- Downstream Tasks: Regarding a few labeled data, we use a model for classifiaction or other tasks.
+
 ## Data paralelsim tools
 1. **Horovod**:  for distributed training. Horovod was developed by Uber in order to bring the ideas of HPC to deep learning.
 
@@ -33,3 +37,6 @@ Powered by Lucene for searching and indexing.
 
 Here, he combines the vector search(using sentence transformer) and text search to get results:<br>
 [link](https://towardsdatascience.com/text-search-vs-vector-search-better-together-3bd48eb6132a)
+
+
+
