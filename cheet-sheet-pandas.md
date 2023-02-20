@@ -101,3 +101,19 @@ a+b
 
 ## .is_unique , .is_monotonic_increasing can be useful.
 
+## resample: if we have datetime index, resample() can perform like aggregation function on it.
+
+```python
+series.resample('3T').sum()
+
+2000-01-01 00:00:00     3
+2000-01-01 00:03:00    12
+2000-01-01 00:06:00    21
+Freq: 3T, dtype: int64
+```
+
+## crosstab(): count the intersection between each feature with one in row and another in column.
+
+
+
+
