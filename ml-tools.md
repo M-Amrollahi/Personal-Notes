@@ -39,4 +39,6 @@ Here, he combines the vector search(using sentence transformer) and text search 
 [link](https://towardsdatascience.com/text-search-vs-vector-search-better-together-3bd48eb6132a)
 
 
-
+## Scalene
+With Scalene we can profile our program and review cpu+ram+gpu usage.\
+[link](https://github.com/plasma-umass/scalene)
