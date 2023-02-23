@@ -1,21 +1,19 @@
 ## Experiences from Harvard professor on ML Research
-
 [link](https://docs.google.com/document/d/1uvAbEhbgS_M-uDMTzmOWRlYxqCkogKRXdbKYYT98ooc/edit#heading=h.w86ci8t15ru3)
 
-## Great illustration of pandas and its functions. How we can use pandas in optimal way(memory, cpu)?
-
+## Great illustration of pandas and its functions
+How we can use pandas in optimal way(memory, cpu)?\
 [link](https://betterprogramming.pub/pandas-illustrated-the-definitive-visual-guide-to-pandas-c31fa921a43)
 
-## Is the elbow the only wat to optimise clusters? There are some other ways.
-
+## Is the elbow the only wat to optimise clusters? 
+There are some other ways.\
 [link](https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd)
 
 ## How to get prepared for interview for data science. Topics.
-
 [link](https://medium.com/nerd-for-tech/60-days-plan-to-revise-data-science-concepts-0-to-100-interview-preparation-a30fc0696b48)
 
-## Contrasive learning. Negative samples and positive samples and anchor. simclr.
-
+## Contrasive learning. Negative samples and positive samples and anchor. 
+SimCLR.\
 [link](https://medium.com/aiguys/contrastive-learning-explained-17fa79f707bf)
 
 ## How to classify unlabeled data?
@@ -26,34 +24,35 @@
 
 [link](https://medium.com/aiguys/how-to-classify-unlabeled-data-tricks-for-semisupervised-learning-57706ff04813)
 
-## How to use pandas in efficient way. Dask. iterate.
-
+## How to use pandas in efficient way.
+Dask. iterate.\
 [link](https://towardsdatascience.com/14-techniques-to-make-your-pandas-workflow-lighting-fast-b00ff0ac9267)
 
-## How to build a question-answering model with t5. Dataset: translate from english to german. context, question, answer
-
+## How to build a question-answering model with t5.
+Dataset: translate from english to german. context, question, answer\
 [link](https://towardsdatascience.com/creating-a-dutch-question-answering-machine-learning-model-3b666a115be3)
 [link](https://medium.com/@xiaohan_63326/fine-tune-fine-tuning-bert-for-question-answering-qa-task-5c29e3d518f1)
 
 ## How to find out model/data drift? How detect it? types of drifts. NannyML package to detect drifts.
 
-Covariate shift: shift in input data (independent variables).
-Prior probability shift: shift in target variables.
-Concept drift: change the relation between input and target.
-
+- Covariate shift: shift in input data (independent variables).
+- Prior probability shift: shift in target variables.
+- Concept drift: change the relation between input and target.
 
 [link](https://towardsdatascience.com/monitoring-machine-learning-models-a-tried-and-true-cure-for-a-data-scientists-insomnia-c45b0979a878)
 
-## Pydantic. define data in pythonic way. if we have data in different manners, we can change them in single unit shape.
+## Pydantic
+Define data in pythonic way. if we have data in different manners, we can change them in single unit shape.
 
 [link](https://towardsdatascience.com/easily-validate-user-generated-data-using-pydantic-5ace695cc3c8)
 
-## AI and types of reasoning. Inductive: Specific, Patern, General (like leaves to trees) . Deductive: General, Hypothesis, Specific (like clustering).
+## AI and types of reasoning. 
+- Inductive: Specific, Patern, General (like leaves to trees) . 
+- Deductive: General, Hypothesis, Specific (like clustering).
 
 [link](https://towardsdatascience.com/on-ai-and-types-of-reasoning-fc6980295158)
 
-## with this package you can fix the unicode char issues. ftfy.
-
+## with this package you can fix the unicode char issues: ftfy.
 Correct the sentence using â€œftfyâ€\x9d.
 
 ## How to use mlflow to log whatever we need during the training models like loss, acc, model params and...
