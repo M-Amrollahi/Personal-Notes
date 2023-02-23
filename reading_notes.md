@@ -81,3 +81,11 @@ with mlflow.start_run():
 - With pretraining, you can use 1000x less data than starting from scratch.\
 - There is a paper the identified that using a few layers of some pre-trained model can improve the model training in case of time and accuracy.\ But, that is not huge, so we use SSL.
 [link](https://www.fast.ai/posts/2020-01-13-self_supervised.html)
+
+## Runge phenomenon:
+Sampling.\
+equidistance.\
+it occurs whenever you try to interpolate a function by polynomials when you are using an equidistant grid.\
+You can avoid the Runge phenomenon by using a suitably non-equidistant grid. One of those grids, which are working very well, is the Chebyshev grid, which we will introduce in the next section.
+[link](https://medium.com/@mathcube7/chebyshev-interpolation-with-python-2f2e89bb7c30)
+
