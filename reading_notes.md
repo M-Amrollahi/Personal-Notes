@@ -90,3 +90,8 @@ You can avoid the Runge phenomenon by using a suitably non-equidistant grid. One
 
 ## Summary of Transformer models:
 [link](https://amatriain.net/blog/transformer-models-an-introduction-and-catalog-2d1e9039f376/)
+
+## Using Bayesian Search can improve the spending of model
+[](https://medium.com/@ali.soleymani.co/stop-using-grid-search-or-random-search-for-hyperparameter-tuning-c2468a2ff887)
+
+
