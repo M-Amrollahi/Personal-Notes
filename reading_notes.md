@@ -94,4 +94,7 @@ You can avoid the Runge phenomenon by using a suitably non-equidistant grid. One
 ## Using Bayesian Search can improve the spending of model
 [](https://medium.com/@ali.soleymani.co/stop-using-grid-search-or-random-search-for-hyperparameter-tuning-c2468a2ff887)
 
+## How Diffusion model works?
+With Math.\
+[](https://medium.com/@steinsfu/diffusion-model-clearly-explained-cd331bd41166)
 
