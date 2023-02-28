@@ -98,3 +98,7 @@ You can avoid the Runge phenomenon by using a suitably non-equidistant grid. One
 With Math.\
 [](https://medium.com/@steinsfu/diffusion-model-clearly-explained-cd331bd41166)
 
+## Simple chatbot with NLTK.
+Simple as dictionary of questions and answers.\
+[link](https://medium.com/@varreldtantio/how-to-build-a-chatbot-using-natural-language-processing-ba9c53e0086c)
+
