@@ -105,3 +105,12 @@ Simple as dictionary of questions and answers.\
 ## How to use knowledge distilltion(student-teacher model)
 new_loss = alpha* (student model output and targets losses) + (1-alpha)* (KL(teacher, student)) .\
 [link](https://medium.com/artificialis/maximizing-model-performance-with-knowledge-distillation-in-pytorch-12b3960a486a)
+
+## Ensemle learning. Bagging and Boosting
+- Decision tree ensembles combine several decision trees into a single estimator
+- Tree ensembles are less prone to overfitting than a single decision tree
+- two popular methods are bagging and boosting. These are the seeds behind popular techniques such as Random Forest, AdaBoost, and XGBoost.
+- Bagging: “Bootstrap AGGregation.” The way it works is you train a set of decision trees (one at a time) by randomly sampling your training dataset with replacement.
+- Boosting leverages the idea of learning from your mistakes. It works by iteratively training decision trees via an error-based data re-weighting scheme. Walking through this, we start with a single training dataset, say T₀, and use it to grow a single decision tree. Afterward, the training dataset is re-weighted so that records with incorrectly predicted targets receive more weight. The new training dataset, say T₁, then trains another decision tree
+
+[link](https://towardsdatascience.com/10-decision-trees-are-better-than-1-719406680564)
