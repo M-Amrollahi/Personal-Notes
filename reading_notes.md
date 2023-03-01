@@ -102,3 +102,6 @@ With Math.\
 Simple as dictionary of questions and answers.\
 [link](https://medium.com/@varreldtantio/how-to-build-a-chatbot-using-natural-language-processing-ba9c53e0086c)
 
+## How to use knowledge distilltion(student-teacher model)
+new_loss = alpha* (student model output and targets losses) + (1-alpha)* (KL(teacher, student)) .\
+[link](https://medium.com/artificialis/maximizing-model-performance-with-knowledge-distillation-in-pytorch-12b3960a486a)
