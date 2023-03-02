@@ -114,3 +114,9 @@ new_loss = alpha* (student model output and targets losses) + (1-alpha)* (KL(tea
 - Boosting leverages the idea of learning from your mistakes. It works by iteratively training decision trees via an error-based data re-weighting scheme. Walking through this, we start with a single training dataset, say T₀, and use it to grow a single decision tree. Afterward, the training dataset is re-weighted so that records with incorrectly predicted targets receive more weight. The new training dataset, say T₁, then trains another decision tree
 
 [link](https://towardsdatascience.com/10-decision-trees-are-better-than-1-719406680564)
+
+
+## Similarity measures.
+Cosine, Euclidian...\
+[link](https://towardsdev.com/similarity-measures-in-nlp-implementation-in-python-3289c0073e2a)
+
