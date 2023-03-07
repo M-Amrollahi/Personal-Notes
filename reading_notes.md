@@ -120,3 +120,7 @@ new_loss = alpha* (student model output and targets losses) + (1-alpha)* (KL(tea
 Cosine, Euclidian...\
 [link](https://towardsdev.com/similarity-measures-in-nlp-implementation-in-python-3289c0073e2a)
 
+
+## How to convert a model in FP16 to optimize the performance 
+[link](https://medium.com/@validate/object-detection-with-pytorch-models-ce297239884e)
+
