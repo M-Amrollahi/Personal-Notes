@@ -109,39 +109,80 @@ git config --list
 git config --global user.name "AAA"
 
 
-Working Tree / Working Directory
-Staging / Index
-Repository
-
-Track , Untracked files
-
-#move from staged to unstaged
-git restore --staged <filename>
-git rm --cached <filename>
-
-(root-commit) ab0a279
-
 git add index.txt --patch
 
-git log --oneline
+
 
 git show <commit>
 
 git add --interactive <file>
 
-#restore to last position
-git restore <filename>
 
-#restore all files to last commit
-git restore .
-
-#restore the file to commit id
-git restore --source 27hq6251 index.txt
-
-#go back 2 step commit (do not remove the rest commits)
+# go back to step 2 commit (do not remove the rest commits)
 git reset HEAD~2
 
+## git log
+- git log --pretty=oneline
+- git log -p -2 (last to commits with diffs)
+- git log --stat (with summary of diffs)
+- git log --since=2.weeks
 
-git config --list --system 
-git config --list --global
-git config --list --local
+
+
+## git rm
+- git rm --cached README (if we want to untrack a file from working tree without removing the file)
+
+
+
+## git diff
+- git diff --staged//--cached (diff between staged and last commit)
+
+
+
+## git status
+- git status -s
+
+
+
+
+
+## git restore
+- Unmodify a modified file. restore to last commit. \
+git restore <filename>
+
+- restore all files to last commit\
+git restore .
+
+- restore the file to commit id\
+git restore --source 27hq6251 index.txt
+
+- move from staged to unstaged\
+git restore --staged <filename>
+git rm --cached <filename>
+
+
+
+
+
+
+
+## How to open config file
+git config -e\
+vim .git/config
+
+## What is origin?
+origin is an alias on your system for a particular remote repository.
+```
+# add the nickname of the remote repo
+git remote add origin git@github.com:USERNAME/REPOSITORY-NAME.git
+
+# push the branchname to origin
+git push <remote> <branch>
+git push origin branchname
+
+# add upstream branch for tracking
+git push -set-upstream-to origin foo
+
+# inspect remote
+git remote show origin
+```
