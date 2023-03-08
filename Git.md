@@ -96,6 +96,23 @@ git config --global user.name "AAA"
 --system (system)
 ```
 
+## Git branch
+```
+# filter only merged branches
+git branch --merged
+
+# filter not-yet-merged
+git branch --no-merged
+
+# tracking branches
+git branch -vv
+
+# delete from remote branch
+git push origin --delete serverfix
+
+
+
+```
 ## What is origin?
 origin is an alias on your system for a particular remote repository.
 ```
@@ -103,11 +120,13 @@ origin is an alias on your system for a particular remote repository.
 git remote add origin git@github.com:USERNAME/REPOSITORY-NAME.git
 
 # push the branchname to origin
+#Git automatically expands the x branchname out to refs/heads/x:refs/heads/x, which means, “Take my x local branch and push it to update the remote’s x branch.”
 git push <remote> <branch>
-git push origin branchname
+git push origin branchname == (git push origin branchname:branchname) page,98
 
 # add upstream branch for tracking
 git push -set-upstream-to origin foo
+
 
 # inspect remote
 git remote show origin
