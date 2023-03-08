@@ -1,71 +1,28 @@
 https://matthew-brett.github.io/curious-git/curious_git.html
 
-The most commonly used Git commands are:
-   add        Add file contents to the index
-   bisect     Find by binary search the change that introduced a bug
-   branch     List, create, or delete branches
-   checkout   Checkout a branch or paths to the working tree
-   clone      Clone a repository into a new directory
-   commit     Record changes to the repository
-   diff       Show changes between commits, commit and working tree, etc
-   fetch      Download objects and refs from another repository
-   grep       Print lines matching a pattern
-   init       Create an empty Git repository or reinitialize an existing one
-   log        Show commit logs
-   merge      Join two or more development histories together
-   mv         Move or rename a file, a directory, or a symlink
-   pull       Fetch from and integrate with another repository or a local branch
-   push       Update remote refs along with associated objects
-   rebase     Forward-port local commits to the updated upstream head
-   reset      Reset current HEAD to the specified state
-   rm         Remove files from the working tree and from the index
-   show       Show various types of objects
-   status     Show the working tree status
-   tag        Create, list, delete or verify a tag object signed with GPG
+The most commonly used Git commands are:\
+   __add__:        Add file contents to the index\
+   __bisect__:     Find by binary search the change that introduced a bug\
+   __branch__:     List, create, or delete branches\
+   __checkout__:   Checkout a branch or paths to the working tree\
+   __clone__:      Clone a repository into a new directory\
+   __commit__:     Record changes to the repository\
+   __diff__:       Show changes between commits, commit and working tree, etc\
+   __fetch__:      Download objects and refs from another repository\
+   __grep__:       Print lines matching a pattern\
+   __init__:       Create an empty Git repository or reinitialize an existing one\
+   __log__:        Show commit logs\
+   __merge__:      Join two or more development histories together\
+   __mv__:         Move or rename a file, a directory, or a symlink\
+   __pull__:       Fetch from and integrate with another repository or a local branch\
+   __push__:       Update remote refs along with associated objects\
+   __rebase__:     Forward-port local commits to the updated upstream head\
+   __reset__:      Reset current HEAD to the specified state\
+   __rm__:         Remove files from the working tree and from the index\
+   __show__:       Show various types of objects\
+   __status__:     Show the working tree status\
+   __tag__:        Create, list, delete or verify a tag object signed with GPG\
    
-----------------------------------------------------------------------------------------
-
-git log --graph --pretty=format:'%Cred%h%Creset%n' --abbrev-commit --date=relative --branches --all
-#show the graph of the commit
-
-* 0bcaee0
-| 
-* 9c10c1b
-|   
-*   cdbfd29
-|\  
-| | 
-| * 9871100
-| |   
-| | * 828b23c
-| |/  
-|/|   
-| | 
-* | 71c5739
-|/  
-| 
-* 07e804e
-| 
-* 243ab3e
-| 
-* 40efd50
-----------------------------------------------------------------------------------------
-git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-#another way to show the graph
-
-* 0bcaee0 - (HEAD -> master) new commitment (4 hours ago) <>
-* 9c10c1b - (br1) chnage branch after sdd (3 days ago) <>
-*   cdbfd29 - (origin/master) test1856 (4 days ago) <>
-|\  
-| * 9871100 - Create README.md (4 days ago) <>
-| | * 828b23c - (origin/test_branch) branch added (4 days ago) <>
-| |/  
-|/|   
-* | 71c5739 - test commit (4 days ago) <>
-|/  
-* 07e804e - test (4 days ago) <>
-* 243ab3e - Update ssss.txt (4 days ago) <>
-* 40efd50 - Create ssss.txt (4 days ago) <>
 ----------------------------------------------------------------------------------------
 
 git hash-object ***
@@ -186,3 +143,51 @@ git push -set-upstream-to origin foo
 # inspect remote
 git remote show origin
 ```
+
+
+```
+git log --graph --pretty=format:'%Cred%h%Creset%n' --abbrev-commit --date=relative --branches --all
+
+
+* 0bcaee0
+| 
+* 9c10c1b
+|   
+*   cdbfd29
+|\  
+| | 
+| * 9871100
+| |   
+| | * 828b23c
+| |/  
+|/|   
+| | 
+* | 71c5739
+|/  
+| 
+* 07e804e
+| 
+* 243ab3e
+| 
+* 40efd50
+```
+
+```
+git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+
+* 0bcaee0 - (HEAD -> master) new commitment (4 hours ago) <>
+* 9c10c1b - (br1) chnage branch after sdd (3 days ago) <>
+*   cdbfd29 - (origin/master) test1856 (4 days ago) <>
+|\  
+| * 9871100 - Create README.md (4 days ago) <>
+| | * 828b23c - (origin/test_branch) branch added (4 days ago) <>
+| |/  
+|/|   
+* | 71c5739 - test commit (4 days ago) <>
+|/  
+* 07e804e - test (4 days ago) <>
+* 243ab3e - Update ssss.txt (4 days ago) <>
+* 40efd50 - Create ssss.txt (4 days ago) <>
+```
+
