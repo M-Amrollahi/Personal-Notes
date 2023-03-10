@@ -1,3 +1,6 @@
+# List of ML tools:
+[link](https://github.com/EthicalML/awesome-production-machine-learning#industry-strength-cv)
+
 ## ML expressions:
 - Pretext tasks: learn features from data in models like self-supervised.
 - Downstream Tasks: Regarding a few labeled data, we use a model for classifiaction or other tasks.
