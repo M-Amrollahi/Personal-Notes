@@ -124,3 +124,8 @@ Cosine, Euclidian...\
 ## How to convert a model in FP16 to optimize the performance 
 [link](https://medium.com/@validate/object-detection-with-pytorch-models-ce297239884e)
 
+
+## Comprehensive segmentation models in pytorch
+[link](https://github.com/qubvel/segmentation_models.pytorch)
+[link](https://smp.readthedocs.io/en/latest/)
+
