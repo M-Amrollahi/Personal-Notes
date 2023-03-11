@@ -39,9 +39,6 @@ The most commonly used Git commands are: [link](https://matthew-brett.github.io/
 ```
    
 
-## go back to step 2 commit (do not remove the rest commits)
-```git reset HEAD~2```
-
 ## git log
 ```
 - git log --pretty=oneline
@@ -58,12 +55,27 @@ The most commonly used Git commands are: [link](https://matthew-brett.github.io/
 
 ## git diff
 ```
+# diff between HEAD and commit
+- git diff <commit>
+
 - git diff --staged//--cached (diff between staged and last commit)
 ```
 
 ## git status
 ```- git status -s```
 
+## git reset 
+```
+git reset --hrad/--soft (reset HEAD, index and working tree)
+git reset <commit> --hard (dangerous, reset everything to that commit)
+
+# go back to step 2 commit (do not remove the rest commits)  
+git reset HEAD~2
+
+# unstage every file
+git reset HEAD
+
+```
 
 ## git restore
 - Unmodify a modified file. restore to last commit. 
