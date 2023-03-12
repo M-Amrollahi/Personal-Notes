@@ -129,3 +129,6 @@ Cosine, Euclidian...\
 [link](https://github.com/qubvel/segmentation_models.pytorch)
 [link](https://smp.readthedocs.io/en/latest/)
 
+## Summary of MLOps
+[link](https://techleadcuriosity.com/mlops-best-practices-for-machine-learning-model-development-deployment-and-maintenance-e70f5d2f416b)
+
