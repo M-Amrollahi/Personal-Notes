@@ -1343,3 +1343,26 @@ class T:
 
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
+--------------------------------------------------------------------------------------------
+Decorator:
+singledispatch: define function with different types of inputs (int, list ,...)
+
+from functools import singledispatch
+@singledispatch
+def fun(arg):
+    print("Called with a single argument")
+@fun.register(int)
+def _(arg):
+    print("Called with an integer")
+@fun.register(list)
+def _(arg):
+    print("Called with a list")
+fun(1)  # Prints "Called with an integer"
+fun([1, 2, 3])  # Prints "Called with a list"
+
+
+
+@timeit
+
+
+
