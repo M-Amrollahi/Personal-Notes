@@ -45,3 +45,7 @@ Here, he combines the vector search(using sentence transformer) and text search 
 ## Scalene
 With Scalene we can profile our program and review cpu+ram+gpu usage.\
 [link](https://github.com/plasma-umass/scalene)
+
+## NorFair
+Lightweight model for object tracking\
+[link](https://github.com/tryolabs/norfair)
