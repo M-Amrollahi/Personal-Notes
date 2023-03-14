@@ -115,5 +115,36 @@ Freq: 3T, dtype: int64
 ## crosstab(): count the intersection between each feature with one in row and another in column.
 
 
+## Sort:
+df.sort_values(by='col1', ascending=False, na_position='first')
+df.sort_values(by=['col1', 'col2'])
+df.sort_values(by='col4', key=lambda col: col.str.lower())
 
+## Types:
+df.astype({'col1': 'int32'})
+df.dtypes
+
+## datetime:
+df['year']= df['DoB'].dt.year
+df['month']= df['DoB'].dt.month
+df['day']= df['DoB'].dt.day
+df['week_of_year'] = df['DoB'].dt.week
+df['day_of_week'] = df['DoB'].dt.dayofweek
+df['is_leap_year'] = df['DoB'].dt.is_leap_year
+df.loc['2018-5-2 10:30' : '2018-5-2 10:45' ]
+df.between_time('10:30','10:45')
+
+
+Groupby:
+df.groupby(by=["author_id"])["author_id"].count().sort_values()
+df.groupby(pd.Grouper(key='created_datetime', freq='1w')).count()
+
+
+.open c:\sqlite\db\chinook.db
+.database
+ATTACH DATABASE "c:\sqlite\db\chinook.db" AS chinook;
+.databases
+.exit
+.tables
+.schema albums
 
