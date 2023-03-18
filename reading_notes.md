@@ -33,6 +33,7 @@ Dataset: translate from english to german. context, question, answer\
 [link](https://towardsdatascience.com/creating-a-dutch-question-answering-machine-learning-model-3b666a115be3)
 [link](https://medium.com/@xiaohan_63326/fine-tune-fine-tuning-bert-for-question-answering-qa-task-5c29e3d518f1)
 
+
 ## How to find out model/data drift? How detect it? types of drifts. NannyML package to detect drifts.
 
 - Covariate shift: shift in input data (independent variables).
@@ -80,6 +81,11 @@ with mlflow.start_run():
 - With pretraining, you can use 1000x less data than starting from scratch.\
 - There is a paper the identified that using a few layers of some pre-trained model can improve the model training in case of time and accuracy.\ But, that is not huge, so we use SSL.
 [link](https://www.fast.ai/posts/2020-01-13-self_supervised.html)
+
+- In this process, the unsupervised problem is transformed into a supervised problem by auto-generating the labels. To make use of the huge quantity of unlabeled data, it is crucial to set the right learning objectives to get supervision from the data itself.
+The process of the self-supervised learning method is to identify any hidden part of the input from any unhidden part of the input.
+
+[link](https://neptune.ai/blog/self-supervised-learning#:~:text=Self%2Dsupervised%20learning%20is%20a,by%20auto%2Dgenerating%20the%20labels.)
 
 ## Runge phenomenon:
 Sampling.\
