@@ -150,3 +150,6 @@ Easy way to do computer vision tasks. It consists of a set of routines and diffe
 Automate ML workflow
 [link](https://github.com/pycaret/pycaret)
 
+## Summary of practical computer vision tasks
+[link](https://neptune.ai/blog/15-computer-visions-projects)
+
