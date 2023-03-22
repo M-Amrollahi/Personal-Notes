@@ -139,6 +139,9 @@ Cosine, Euclidian...\
 ## Summary of MLOps
 [link](https://techleadcuriosity.com/mlops-best-practices-for-machine-learning-model-development-deployment-and-maintenance-e70f5d2f416b)
 
+## MLOps Tools (From data processing to model monitoring):
+[link](https://towardsdatascience.com/mlops-tips-and-tricks-75-code-snippets-b8f04036d0a0)
+
 ## Kornia
 Easy way to do computer vision tasks. It consists of a set of routines and differentiable modules to solve generic computer vision problems.
 [link](https://kornia.readthedocs.io/en/latest/get-started/introduction.html)
