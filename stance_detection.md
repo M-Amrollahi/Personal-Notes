@@ -17,3 +17,7 @@
   - Employee feedback
   - Marketing research
 - Evaluation: [The SemEval Stance Dataset - Saif Muhammad](https://www.saifmohammad.com/WebPages/StanceDataset.htm)
+
+
+## Publications:
+- Stance Detection on Social Media: State of the Art and Trends. 2021. [link](https://arxiv.org/pdf/2006.03644.pdf)
