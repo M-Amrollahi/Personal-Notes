@@ -156,3 +156,6 @@ Automate ML workflow
 ## Summary of practical computer vision tasks
 [link](https://neptune.ai/blog/15-computer-visions-projects)
 
+## CuPy: Numpy ans scipy on GPU. almost 100x speeds up rather than CPU
+[link](https://cupy.dev/)
+
