@@ -159,3 +159,6 @@ Automate ML workflow
 ## CuPy: Numpy ans scipy on GPU. almost 100x speeds up rather than CPU
 [link](https://cupy.dev/)
 
+## different sklearn encoders
+[link](https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html)
+
