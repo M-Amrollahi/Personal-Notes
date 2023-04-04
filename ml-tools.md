@@ -17,7 +17,7 @@
 
 ## Search similarity, Search engine:
 
-1. Faiss by Facebook. Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM. It also contains supporting code for evaluation and parameter tuning. Faiss is written in C++ with complete wrappers for Python/numpy. [Github](https://github.com/facebookresearch/faiss)
+1. Faiss by Facebook. Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM. It also contains supporting code for evaluation and parameter tuning. Faiss is written in C++ with complete wrappers for Python/numpy. [Github](https://github.com/facebookresearch/faiss), [link](https://www.pinecone.io/learn/faiss-tutorial/)
 
 
 ## OCR and Document parsing
