@@ -163,4 +163,4 @@ Automate ML workflow
 [link](https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html)
 
 ## Which visualization method to apply?
-[link](https://dataio.ir/%D8%A8%D9%87-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1-%DA%A9%D8%B4%DB%8C%D8%AF%D9%86-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7-voubuiqwuqhb)
+[link](https://dataio.ir/%D8%A8%D9%87-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1-%DA%A9%D8%B4%DB%8C%D8%AF%D9%86-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7-voubuiqwuqhb), [link](https://www.data-to-viz.com/)
