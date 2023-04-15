@@ -15,6 +15,9 @@ There are some other ways.\
 ## Contrasive learning. Negative samples and positive samples and anchor. 
 SimCLR.\
 [link](https://medium.com/aiguys/contrastive-learning-explained-17fa79f707bf)
+[link](https://amitness.com/2020/03/illustrated-simclr/)
+[pytorch implementation SimCLR](https://github.com/leftthomas/SimCLR)
+
 
 ## How to classify unlabeled data?
 - ensemble learning: train some classifiers and label the data whenever almost all classifiers agree on that label
@@ -86,6 +89,10 @@ with mlflow.start_run():
 The process of the self-supervised learning method is to identify any hidden part of the input from any unhidden part of the input.
 
 [link](https://neptune.ai/blog/self-supervised-learning#:~:text=Self%2Dsupervised%20learning%20is%20a,by%20auto%2Dgenerating%20the%20labels.)
+
+- Types we can apply ssl on images:
+[link](https://amitness.com/2020/02/illustrated-self-supervised-learning/)
+
 
 ## Runge phenomenon:
 Sampling.\
