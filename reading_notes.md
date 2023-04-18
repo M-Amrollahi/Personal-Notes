@@ -175,3 +175,6 @@ Automate ML workflow
 ## Skip-gram implementation with pytorch
 [link](https://www.cse.chalmers.se/~richajo/nlp2019/l3/Skip-gram%20with%20negative%20sampling.html)
 
+## Different types of AutoEncoders
+[link](https://medium.com/chat-gpt-now-writes-all-my-articles/introduction-to-all-types-of-autoencoders-with-python-ec0e47b5e1b9)
+
