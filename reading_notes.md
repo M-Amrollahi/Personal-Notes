@@ -178,3 +178,6 @@ Automate ML workflow
 ## Different types of AutoEncoders
 [link](https://medium.com/chat-gpt-now-writes-all-my-articles/introduction-to-all-types-of-autoencoders-with-python-ec0e47b5e1b9)
 
+## Papers for prompt engineering
+[link](https://www.promptingguide.ai/papers)
+
