@@ -181,3 +181,6 @@ Automate ML workflow
 ## Papers for prompt engineering
 [link](https://www.promptingguide.ai/papers)
 
+## How to choose best algorithm for issue?
+[link](https://medium.com/mlearning-ai/how-to-choose-the-best-algorithm-for-your-machine-learning-project-abd271ce6b11)
+
