@@ -184,3 +184,8 @@ Automate ML workflow
 ## How to choose best algorithm for issue?
 [link](https://medium.com/mlearning-ai/how-to-choose-the-best-algorithm-for-your-machine-learning-project-abd271ce6b11)
 
+## Easy explanation of maximum likelihood estimation
+Our goal is to find a model (represented by θ) that make the observed data most probable, or in other words a model that maximizes the likelihood of obtaining the data points X if we were sampling them from the distribution P. This process is often referred to as maximum likelihood estimation (MLE).
+
+Formally, the likelihood of the model (represented by θ) is defined as the probability of obtaining the observed data X given the model:
+[link](https://medium.com/@roiyeho/maximum-likelihood-855b6df92c43)
