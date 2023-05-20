@@ -189,3 +189,6 @@ Our goal is to find a model (represented by θ) that make the observed data most
 
 Formally, the likelihood of the model (represented by θ) is defined as the probability of obtaining the observed data X given the model:
 [link](https://medium.com/@roiyeho/maximum-likelihood-855b6df92c43)
+
+## Tutorial and videos about LLMOps, introduced by Andrej Karpathy
+[link](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/)
