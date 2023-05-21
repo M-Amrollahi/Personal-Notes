@@ -1330,6 +1330,45 @@ class T:
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 --------------------------------------------------------------------------------------------
+[from this link](https://zlliu.medium.com/36-things-i-didnt-know-about-python-until-recently-compilation-abdd425f2ce2)
+
+## How to get functions's attributes with __code__
+def test(a, b, c):
+  apple = 100
+  orange = 200
+
+print(test.__code__.co_argcount)    # 3
+print(test.__code__.co_varnames)    # ('a', 'b', 'c', 'apple', 'orange')
+print(test.__code__.co_consts)      # (None, 100, 200)
+print(test.__code__.co_filename)    # /your/filepath/file.py
+
+## Dict type that you cannot change 
+from types import MappingProxyType
+mp = MappingProxyType({'apple':4, 'orange':5})
+
+## auto-convert floats into ratios
+print(float.as_integer_ratio(1.5))    # (3, 2)
+
+## normal way of importing
+np = __import__('numpy')
+pd = __import__('pandas')
+
+## round the float or int
+print(round(12345, -1))    # 12340
+print(round(12345, -2))    # 12300
+print(round(12345, -3))    # 12000
+
+## dict from keys
+fruits = ['apple', 'orange' ,'pear']
+d = dict.fromkeys(fruits) # d = {'apple':None, 'orange':None, 'pear':None}
 
 
+## only accepts slots
+class Dog:
+  __slots__ = ['name', 'age']
+dog = Dog()
+dog.name = 'apple'    # ok
+dog.age = 1           # ok
+dog.gender = 'm'      # ERROR cus 'gender' is not in __slots__
 
+--------------------------------------------------------------------------------------------
