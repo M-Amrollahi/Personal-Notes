@@ -192,3 +192,7 @@ Formally, the likelihood of the model (represented by θ) is defined as the prob
 
 ## Tutorial and videos about LLMOps, introduced by Andrej Karpathy
 [link](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/)
+
+## How diffusion models work
+[link](https://betterprogramming.pub/diffusion-models-ddpms-ddims-and-classifier-free-guidance-e07b297b2869)
+
