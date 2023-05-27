@@ -182,7 +182,7 @@ Automate ML workflow
 [link](https://www.promptingguide.ai/papers)
 
 ## How to choose best algorithm for issue?
-[link](https://medium.com/mlearning-ai/how-to-choose-the-best-algorithm-for-your-machine-learning-project-abd271ce6b11)
+[link](https://medium.com/mlearning-ai/how-to-choose-the-best-algorithm-for-your-machine-learning-project-abd271ce6b11), [link](https://pub.towardsai.net/which-ml-algorithm-to-choose-f9caf674219e)
 
 ## Easy explanation of maximum likelihood estimation
 Our goal is to find a model (represented by θ) that make the observed data most probable, or in other words a model that maximizes the likelihood of obtaining the data points X if we were sampling them from the distribution P. This process is often referred to as maximum likelihood estimation (MLE).
@@ -194,5 +194,6 @@ Formally, the likelihood of the model (represented by θ) is defined as the prob
 [link](https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/)
 
 ## How diffusion models work
-[link](https://betterprogramming.pub/diffusion-models-ddpms-ddims-and-classifier-free-guidance-e07b297b2869)
+[link](https://betterprogramming.pub/diffusion-models-ddpms-ddims-and-classifier-free-guidance-e07b297b2869), [link](https://medium.com/mlearning-ai/understanding-the-diffusion-model-and-the-theory-tensorflow-cafcd5752b98), [link](https://medium.com/@jdseo/implementing-diffusion-models-with-pytorch-cdc1c99b90ab)
+
 
