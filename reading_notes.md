@@ -199,4 +199,6 @@ Formally, the likelihood of the model (represented by θ) is defined as the prob
 ## How generate synthesize data using gpt2 and dataframe(Generation of Realistic Tabular data)
 [link](https://github.com/kathrinse/be_great)
 
-
+## How positional encoding works(by kazeminejad)
+Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/2305.19466)
+[link](https://lih-verma.medium.com/positional-embeddings-in-transformer-eab35e5cb40d)
