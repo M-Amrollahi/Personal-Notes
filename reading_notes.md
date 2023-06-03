@@ -196,4 +196,7 @@ Formally, the likelihood of the model (represented by θ) is defined as the prob
 ## How diffusion models work
 [link](https://betterprogramming.pub/diffusion-models-ddpms-ddims-and-classifier-free-guidance-e07b297b2869), [link](https://medium.com/mlearning-ai/understanding-the-diffusion-model-and-the-theory-tensorflow-cafcd5752b98), [link](https://medium.com/@jdseo/implementing-diffusion-models-with-pytorch-cdc1c99b90ab)
 
+## How generate synthesize data using gpt2 and dataframe(Generation of Realistic Tabular data)
+[link](https://github.com/kathrinse/be_great)
+
 
