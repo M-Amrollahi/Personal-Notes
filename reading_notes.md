@@ -202,3 +202,6 @@ Formally, the likelihood of the model (represented by θ) is defined as the prob
 ## How positional encoding works(by kazeminejad)
 Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/2305.19466)
 [link](https://lih-verma.medium.com/positional-embeddings-in-transformer-eab35e5cb40d)
+
+## How to make 3D models from 2D images
+[link](https://betterprogramming.pub/opensource-photogrammetry-pipeline-41854dca4e8e), [link](https://github.com/OpenDroneMap/ODM)
