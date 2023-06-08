@@ -208,3 +208,6 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 
 ## How to train a local and private chatbot?
 [blog](https://betterprogramming.pub/private-llms-on-local-and-in-the-cloud-with-langchain-gpt4all-and-cerebrium-6dade79f45f6), [gpt4all github](https://github.com/nomic-ai/gpt4all),[gpt4all](https://gpt4all.io/index.html),[privateGPT](https://github.com/imartinez/privateGPT),[on cloud](https://www.cerebrium.ai/),
+
+## Vector databases
+[chromadb](https://www.trychroma.com/), [pinecone](https://app.pinecone.io/organizations/), [langchain vector-db]()
