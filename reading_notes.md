@@ -212,4 +212,5 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 ## Vector databases
 [chromadb](https://www.trychroma.com/), [pinecone](https://app.pinecone.io/organizations/), [langchain vector-db](), [compare blog](https://medium.com/sopmac-ai/vector-databases-as-memory-for-your-ai-agents-986288530443)
 
-
+## How to retrain a model with efficient number of parameters?
+[LoRa, QLora](https://towardsdatascience.com/qlora-fine-tune-a-large-language-model-on-your-gpu-27bed5a03e2b),[LoRa](https://github.com/microsoft/LoRA), [PEFT](https://github.com/huggingface/peft)
