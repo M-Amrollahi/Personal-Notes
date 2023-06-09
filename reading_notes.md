@@ -214,3 +214,6 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 
 ## How to retrain a model with efficient number of parameters?
 [LoRa, QLora](https://towardsdatascience.com/qlora-fine-tune-a-large-language-model-on-your-gpu-27bed5a03e2b),[LoRa](https://github.com/microsoft/LoRA), [PEFT](https://github.com/huggingface/peft)
+
+## How to build transformer block from scratch
+[harvard](http://nlp.seas.harvard.edu/annotated-transformer/), [blog](https://medium.com/analytics-vidhya/bert-implementation-multi-head-attention-4a10142636fe), [Decoder](https://medium.com/@hunter-j-phillips/the-decoder-8882c33de69a),
