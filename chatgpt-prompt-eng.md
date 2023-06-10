@@ -98,3 +98,42 @@ I want you to act as a data scientist writer. Please write
 the {number-of-words}-word introduction to a tutorial on
 {title}. {Insert relevant key points}.
 
+
+----------------
+# Fron [Deeplearning.ai with Andrew Ng](https://learn.deeplearning.ai/chatgpt-prompt-eng/)
+## Identify the part of the text you want to aim it by delimiter like ```{text}``` or <> or --- or ####
+e.g.: summarize the text delimited by triple backticks ```{text}```
+
+## Ask it for specific output type like json, html,...
+e.g. Use the following format ...
+
+## Ask to check any condition in the input or output. 
+e.g. If there is not sign of abusive content then ...
+
+## Few-shot prompting.
+Tell him about somthing with an example and then ask him to write in the same manner but with different topic.
+
+## Need to use some tecniques to reduce the hallucination
+
+## Iterativly Prompt Develelopment
+Refine the prompt with several examples
+
+## You can ask it to extract relevant information
+
+## Find the sentiment pos/neg
+prompt = f"""
+What is the sentiment of the following product review, 
+which is delimited with triple backticks?
+
+Give your answer as a single word, either "positive" \
+or "negative".
+
+Review text: '''{lamp_review}'''
+"""
+
+## check the grammar and proofreading
+prompt = f"proofread and correct this review:
+
+## First, give him a role then ask him about his task
+Your role is a customer... . your task is to ...
+
