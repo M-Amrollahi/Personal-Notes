@@ -10,7 +10,7 @@ There are some other ways.\
 [link](https://towardsdatascience.com/are-you-still-using-the-elbow-method-5d271b3063bd)
 
 ## How to get prepared for interview for data science. Topics.
-[link](https://medium.com/nerd-for-tech/60-days-plan-to-revise-data-science-concepts-0-to-100-interview-preparation-a30fc0696b48)
+[link](https://medium.com/nerd-for-tech/60-days-plan-to-revise-data-science-concepts-0-to-100-interview-preparation-a30fc0696b48), [link](https://github.com/DopplerHQ/awesome-interview-questions#python)
 
 ## Contrasive learning. Negative samples and positive samples and anchor. 
 SimCLR.\
@@ -38,12 +38,15 @@ Dataset: translate from english to german. context, question, answer\
 
 
 ## How to find out model/data drift? How detect it? types of drifts. NannyML package to detect drifts.
-
 - Covariate shift: shift in input data (independent variables).
 - Prior probability shift: shift in target variables.
 - Concept drift: change the relation between input and target.
-
 [link](https://towardsdatascience.com/monitoring-machine-learning-models-a-tried-and-true-cure-for-a-data-scientists-insomnia-c45b0979a878)
+
+## MLOps tools for model monitoring in production
+- Evidently, Whylogs, Fiddler
+- Methodology to Detect Drifts
+[link](https://medium.com/@bhargavi.sikhakolli31/monitoring-ml-systems-using-mlops-an-overview-e1d6eea64ae2)
 
 ## Pydantic
 Define data in pythonic way. if we have data in different manners, we can change them in single unit shape.
@@ -224,8 +227,4 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 - In the end, we use total loss which is loss_maksed + loss_nsp
 [link](https://medium.com/data-and-beyond/complete-guide-to-building-bert-model-from-sratch-3e6562228891)
 
-## MLOps tools for model monitoring in production
-- Evidently, Whylogs, Fiddler
-- Methodology to Detect Drifts
-[link](https://medium.com/@bhargavi.sikhakolli31/monitoring-ml-systems-using-mlops-an-overview-e1d6eea64ae2)
 
