@@ -217,3 +217,15 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 
 ## How to build transformer block from scratch
 [harvard](http://nlp.seas.harvard.edu/annotated-transformer/), [blog](https://medium.com/analytics-vidhya/bert-implementation-multi-head-attention-4a10142636fe), [Decoder](https://medium.com/@hunter-j-phillips/the-decoder-8882c33de69a),
+
+## How to train a BERT model from scratch?
+- In the last layer, we transform the MASKED token embeddings to a vocab_size space (Linear(embedding_size, vocab_size)).
+- Also, we have NSP which is to predict the next sentence based on two joint sentences [cls]+t1+[sep]+t2+[sep]+[pad]. Then we just use the [cls] token embedding to classify it (0,1 --> similar or not).
+- In the end, we use total loss which is loss_maksed + loss_nsp
+[link](https://medium.com/data-and-beyond/complete-guide-to-building-bert-model-from-sratch-3e6562228891)
+
+## MLOps tools for model monitoring in production
+- Evidently, Whylogs, Fiddler
+- Methodology to Detect Drifts
+[link](https://medium.com/@bhargavi.sikhakolli31/monitoring-ml-systems-using-mlops-an-overview-e1d6eea64ae2)
+
