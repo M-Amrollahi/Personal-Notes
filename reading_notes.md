@@ -227,4 +227,11 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 - In the end, we use total loss which is loss_maksed + loss_nsp
 [link](https://medium.com/data-and-beyond/complete-guide-to-building-bert-model-from-sratch-3e6562228891)
 
+## Questions should ask before choosing ml method
+- Does the algorithm have any assumptions about the data set? For example, some algorithms assume that the data is linearly separable (e.g., perceptron or linear SVM), while others assume that the data is normally distributed (e.g., Gaussian Mixture Models).
+- How much data is needed to train the model effectively? Some algorithms, like deep neural networks, are more data-savvy than others.
+- What are the runtime and memory requirements of the algorithm, both during training and prediction time?
+- Which data preprocessing steps are required to prepare the data for the algorithm?
+- How many hyperparameters does the algorithm have? Algorithms that have a lot of hyperparameters take more time to train and tune.
+- Can the results of the algorithm be easily interpreted? In many problem domains (such as medical diagnosis), we would like to be able to explain the model’s predictions in human terms. Some models can be easily visualized (such as decision trees), while others behave more like a black box (e.g., neural networks).
 
