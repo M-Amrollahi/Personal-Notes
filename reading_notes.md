@@ -17,6 +17,7 @@ SimCLR.\
 [link](https://medium.com/aiguys/contrastive-learning-explained-17fa79f707bf)
 [link](https://amitness.com/2020/03/illustrated-simclr/)
 [pytorch implementation SimCLR](https://github.com/leftthomas/SimCLR)
+[new approach for constrative learning](https://towardsdatascience.com/a-framework-for-contrastive-self-supervised-learning-and-designing-a-new-approach-3caab5d29619)
 
 
 ## How to classify unlabeled data?
