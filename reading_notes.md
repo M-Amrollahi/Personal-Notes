@@ -236,3 +236,13 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 - How many hyperparameters does the algorithm have? Algorithms that have a lot of hyperparameters take more time to train and tune.
 - Can the results of the algorithm be easily interpreted? In many problem domains (such as medical diagnosis), we would like to be able to explain the model’s predictions in human terms. Some models can be easily visualized (such as decision trees), while others behave more like a black box (e.g., neural networks).
 
+## Why to reduce the variance
+[link](https://towardsdatascience.com/variance-reduction-in-experiments-part-2-covariate-adjustment-methods-f5393f92eb8f)
+
+## Ensemle learning : bagging and boosting
+[link](https://towardsdatascience.com/ensemble-learning-bagging-and-boosting-23f9336d3cb0)
+
+## Hyperparam Tuning using Bayesian
+[link](https://towardsdatascience.com/conceptual-overview-of-bayesian-optimization-for-parameter-tuning-in-machine-learning-a3b1b4b9339f)
+
+
