@@ -19,7 +19,7 @@
 ## A Survey on Efficient Training of Transformers
 [link](https://arxiv.org/abs/2302.01107)
 
-## https://arxiv.org/pdf/2102.04488.pdf
+## WAKE WORD DETECTION WITH STREAMING TRANSFORMER
 [link](https://arxiv.org/pdf/2102.04488.pdf)
 
 ## Context Encoders: Feature Learning by Inpainting
@@ -34,3 +34,32 @@
 ## Text Classification via Large Language Models
 [link](https://arxiv.org/pdf/2305.08377.pdf)
 
+## ChatGPT: Applications, Opportunities, and Threats
+[link](https://arxiv.org/abs/2304.09103)
+
+## Natural Language Reasoning, A Survey
+[link](https://arxiv.org/abs/2303.14725)
+
+## Unlocking the Potential of ChatGPT: A Comprehensive Exploration of its Applications, Advantages, Limitations, and Future Directions in Natural Language Processing
+[link](https://arxiv.org/abs/2304.02017)
+
+## Summary of ChatGPT/GPT-4 Research and Perspective Towards the Future of Large Language Models
+[link](https://arxiv.org/abs/2304.01852)
+
+## Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling
+[link](https://arxiv.org/abs/2304.01373)
+
+## A Survey of Large Language Models
+[link](https://arxiv.org/abs/2303.18223)
+
+## Augmented Language Models: a Survey
+[link](https://arxiv.org/abs/2302.07842)
+
+## Erasing Concepts from Diffusion Models
+[link](https://arxiv.org/abs/2303.07345)
+
+## A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT
+[link](Erasing Concepts from Diffusion Models)
+
+## Computing semantic similarity of texts by utilizing dependency graph
+[link](https://link.springer.com/article/10.1007/s10844-022-00771-z)
