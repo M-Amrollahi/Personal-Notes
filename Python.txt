@@ -1372,3 +1372,18 @@ dog.age = 1           # ok
 dog.gender = 'm'      # ERROR cus 'gender' is not in __slots__
 
 --------------------------------------------------------------------------------------------
+
+## built-in functions
+
+### Partial. Freeze some params in a function
+from functools import partial
+def f1(x,y,z):
+	return x,y,z
+a = partial(f1,2,3)
+a(5)
+
+### cache for time or itemsize
+from functools import lru_cache
+@lru_cache(maxsize=128)
+def fibonacci(n):
+	...
