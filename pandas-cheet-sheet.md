@@ -165,6 +165,20 @@ df.groupby(by=["author_id"])["author_id"].count().sort_values()
 df.groupby(pd.Grouper(key='created_datetime', freq='1w')).count()
 ```
 
+## Cut
+Each value palce in which interval like (1,3]
+
+```python
+df1["a"] = pd.cut( df1["b"],bins=np.linspace(1,10,num=4))
+```
+
+## Rolling
+Roll a windows of data and apply a method
+
+```python
+df1["a"]=df1["b"].rolling(window=3).mean()
+```
+
 .open c:\sqlite\db\chinook.db
 .database
 ATTACH DATABASE "c:\sqlite\db\chinook.db" AS chinook;
