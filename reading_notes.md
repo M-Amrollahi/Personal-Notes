@@ -245,4 +245,23 @@ Kazeminejad also proposed alternated model for pe [paper](https://arxiv.org/abs/
 ## Hyperparam Tuning using Bayesian
 [link](https://towardsdatascience.com/conceptual-overview-of-bayesian-optimization-for-parameter-tuning-in-machine-learning-a3b1b4b9339f)
 
+## Standardization of features
+__MinMaxScaler__:
+MinMaxScaler preserves the shape of the original distribution. It doesn’t meaningfully change the information embedded in the original data.Note that MinMaxScaler doesn’t reduce the importance of outliers.
+
+__RobustScaler__:
+RobustScaler transforms the feature vector by subtracting the median and then dividing by the interquartile range (75% value — 25% value).
+Use RobustScaler if you want to reduce the effects of outliers, relative to MinMaxScaler. You could use RobustScaler if you have outliers and want to reduce their influence.
+
+__StandardScaler__:
+StandardScaler standardizes a feature by subtracting the mean and then scaling to unit variance. Unit variance means dividing all the values by the standard deviation. 
+
+- Scale generally means to change the range of the values. The shape of the distribution doesn’t change. Think about how a scale model of a building has the same proportions as the original, just smaller. That’s why we say it is drawn to scale. The range is often set at 0 to 1.
+
+- Standardize generally means changing the values so that the distribution’s standard deviation equals one. Scaling is often implied.
+
+- Normalize can be used to mean either of the above things (and more!).
+
+[link](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html)
+
 
