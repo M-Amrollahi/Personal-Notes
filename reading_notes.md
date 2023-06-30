@@ -264,4 +264,7 @@ StandardScaler standardizes a feature by subtracting the mean and then scaling t
 
 [link](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html)
 
+## A comprehensive library for SSL named as PySSL
+[link](https://medium.com/@giakoumoglou4/pyssl-self-supervised-learning-being-easy-again-6debd9e442b8)
+
 
