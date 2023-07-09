@@ -267,4 +267,7 @@ StandardScaler standardizes a feature by subtracting the mean and then scaling t
 ## A comprehensive library for SSL named as PySSL
 [link](https://medium.com/@giakoumoglou4/pyssl-self-supervised-learning-being-easy-again-6debd9e442b8)
 
+## How to design systems
+[link](https://blog.devgenius.io/system-design-blueprint-the-ultimate-guide-e27b914bf8f1)
+
 
