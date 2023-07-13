@@ -270,4 +270,7 @@ StandardScaler standardizes a feature by subtracting the mean and then scaling t
 ## How to design systems
 [link](https://blog.devgenius.io/system-design-blueprint-the-ultimate-guide-e27b914bf8f1)
 
+## Matplotlib styles
+[link](https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html)
+
 
