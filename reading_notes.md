@@ -287,5 +287,8 @@ StandardScaler standardizes a feature by subtracting the mean and then scaling t
 - با توجه به مفهوم احتمال خطای نوع اول، ناحیه بحرانی را می‌توان محدوده‌ای وابسته به آن در نظر گرفت. هر چه احتمال خطای نوع اول را کاهش دهیم، ناحیه بحرانی کوچک‌تر شده و امکان رد فرض صفر ضعیف‌تر می شود. و برعکس اگر خطای نوع اول را افزایش دهیم، در بیشتر موارد آزمون آماری به رد فرض صفر رای خواهد داد. در نتیجه معمولا احتمال خطای نوع اول را در کارهای صنعتی ۵٪ و برای امور پزشکی و حساس ۱٪ در نظر می‌گیرند.
   [link](https://blog.faradars.org/statistical-inference/)
 
+  ## Real time object segmentation with YOLACT
+  [link](https://github.com/dbolya/yolact)
+
+
   
-- 
