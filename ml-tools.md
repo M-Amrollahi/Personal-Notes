@@ -49,3 +49,7 @@ With Scalene we can profile our program and review cpu+ram+gpu usage.\
 ## NorFair
 Lightweight model for object tracking\
 [link](https://github.com/tryolabs/norfair)
+
+
+## Pycaret: to compare different classical models
+[link](https://pycaret.gitbook.io/docs/get-started/quickstart)
