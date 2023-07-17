@@ -53,3 +53,6 @@ Lightweight model for object tracking\
 
 ## Pycaret: to compare different classical models
 [link](https://pycaret.gitbook.io/docs/get-started/quickstart)
+
+## To balance dataset using SMOTE and other methods
+[link](https://imbalanced-learn.org/stable/introduction.html)
