@@ -291,4 +291,5 @@ StandardScaler standardizes a feature by subtracting the mean and then scaling t
   [link](https://github.com/dbolya/yolact)
 
 
-  
+  ## Remove noises with sklearn
+  LocalOutlierFactor, IsolationForest
