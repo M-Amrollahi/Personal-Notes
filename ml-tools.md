@@ -54,5 +54,10 @@ Lightweight model for object tracking\
 ## Pycaret: to compare different classical models
 [link](https://pycaret.gitbook.io/docs/get-started/quickstart)
 
+## LazyPredict: like pycaret to compare models
+[link](https://lazypredict.readthedocs.io/en/latest/)
+
 ## To balance dataset using SMOTE and other methods
 [link](https://imbalanced-learn.org/stable/introduction.html)
+
+
