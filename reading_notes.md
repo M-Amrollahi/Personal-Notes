@@ -297,4 +297,11 @@ LocalOutlierFactor, IsolationForest
 ## How to plot scientific plots for journals
 [link](https://github.com/garrettj403/SciencePlots)
 
+## Feature Engineering:
+- Encoding
+- Bucketizing (make bucket out of a range)
+- Transforming (like transform to normal distribution)
+- Normalizing/Standardaizing
+- Feature Crossing (like 2-d to 3-d dims )
+- PCA
 
