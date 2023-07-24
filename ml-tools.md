@@ -60,4 +60,5 @@ Lightweight model for object tracking\
 ## To balance dataset using SMOTE and other methods
 [link](https://imbalanced-learn.org/stable/introduction.html)
 
-
+## SQL in jupyter notebook with JupySQL
+[link](https://jupysql.ploomber.io/en/latest/quick-start.html)
