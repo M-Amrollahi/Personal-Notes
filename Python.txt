@@ -1304,14 +1304,16 @@ re.sub("[\.\,\!\?\:\;\-\=]", " ", tweet)
 --------------------------------------------------------------------------------------------
 Property:
 @property
-    def b(self): return self.__b
-    @b.setter
-    def b(self, b):
-        if type(b) is not int:
-            raise ValueError("'a' must be an integer")
-        if b < 0:
-            raise ValueError("'a' must be at least `0`")
-        self.__b = b
+def b(self): 
+	return self.__b
+
+@b.setter
+def b(self, b):
+	if type(b) is not int:
+	    raise ValueError("'a' must be an integer")
+	if b < 0:
+	    raise ValueError("'a' must be at least `0`")
+	self.__b = b
 
 @dataclass
 class T:
