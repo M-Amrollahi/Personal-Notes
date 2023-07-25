@@ -62,3 +62,11 @@ Lightweight model for object tracking\
 
 ## SQL in jupyter notebook with JupySQL
 [link](https://jupysql.ploomber.io/en/latest/quick-start.html)
+
+## FastDup: increase image and video data quality
+- fd.vis.duplicates_gallery()    # create a visual gallery of duplicates
+- fd.vis.outliers_gallery()      # create a visual gallery of anomalies
+- fd.vis.component_gallery()     # create a visualization of connected components
+- fd.vis.stats_gallery()         # create a visualization of images statistics (e.g. blur)
+- fd.vis.similarity_gallery()    # create a gallery of similar images
+[link](https://github.com/visual-layer/fastdup)
