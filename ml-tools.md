@@ -70,3 +70,7 @@ Lightweight model for object tracking\
 - fd.vis.stats_gallery()         # create a visualization of images statistics (e.g. blur)
 - fd.vis.similarity_gallery()    # create a gallery of similar images
 [link](https://github.com/visual-layer/fastdup)
+
+## Feast: Feature Store
+Data might be anywhere on any platform. With Feature Store we can integrate them and then use them as data source.
+[link](https://github.com/feast-dev/feast)
